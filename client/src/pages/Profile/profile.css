@@ -1,1 +1,46 @@
-/*css*/
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+   
+    width: 100%;
+    text-align: center;
+}
+
+.pic-container {
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    
+}
+
+.pic-link {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px; 
+    border: solid 8px lightgray;      
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 50%;    
+    background-image: url('https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684264594/blank-profile-picture-gc25a26fa6_1280_copy_ve1thb.jpg');
+    background-size: 200px;
+    background-position: 45%;
+
+}
+
+.image{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;  
+   }

@@ -9,12 +9,14 @@ import CommentForm from '../../components/CommentForm/CommentForm';
 const SinglePost = () => {
   
     return (
-     
-       <div>
-        <Header />
+     <div className='singlepost-container'>
+      <Header />
+       <div >
+        
          This is a single post
          <CommentList />
          <CommentForm />
+        </div>
         </div>
    
     );
