@@ -19,6 +19,11 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  profilePic: {
+    type: String,
+    trim: true,
+    default: 'https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684264594/blank-profile-picture-gc25a26fa6_1280_copy_ve1thb.jpg'
+  },
   post: [
     {
       type: Schema.Types.ObjectId,
