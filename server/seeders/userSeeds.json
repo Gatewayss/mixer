@@ -1,0 +1,28 @@
+[
+    {
+      "username": "JaneK",
+      "email": "Jane12@gmail.com",
+      "password": "password01"
+    },
+    {
+      "username": "GageNorton",
+      "email": "gageNorton@gmail.com",
+      "password": "password02"
+    },
+    {
+      "username": "SarahRIsCool",
+      "email": "sarahcool@gmail.com",
+      "password": "password03"
+    },
+    {
+      "username": "JackieL",
+      "email": "Jackl@gmail.com",
+      "password": "password04"
+    },
+    {
+      "username": "EdwardC",
+      "email": "twilight@gmail.com",
+      "password": "password05"
+    }
+  ]
+  
