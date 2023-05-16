@@ -5,7 +5,7 @@ const Canvas = () => {
  
   return (
   
-      <div>
+      <div className="canvas-container">
         This is the canvas
       </div>
 );

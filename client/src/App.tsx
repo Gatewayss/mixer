@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
@@ -8,11 +9,12 @@ import Canvas from './pages/Canvas/Canvas';
 import Challenge from './pages/Challenge/Challenge';
 import Profile from './pages/Profile/Profile';
 import SinglePost from './pages/SinglePost/SinglePost';
+import PictureUpload from './components/PictureUpload/PictureUpload';
 
 function App() {
   return (
     <Router>
-    <div>
+    <div >
      <Routes>
         <Route 
           path="/" 
@@ -42,6 +44,14 @@ function App() {
           path="/profiles/:username" 
           element={<Profile />}
         />
+        <Route 
+          path="/picture/me" 
+          element={<PictureUpload />}
+        />
+        <Route               
+            path="/picture" 
+            element={<PictureUpload />}
+          />
         <Route 
           path="/posts/:postId" 
           element={<SinglePost />} 

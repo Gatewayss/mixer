@@ -1,1 +1,40 @@
-/*css*/
+.postform-container {   
+       border: solid green;
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       align-items: center;
+       height: 150px;    
+       
+   }
+   
+   .postform-header {
+       display: flex;
+       justify-content: center;      
+       width: 100%;
+       
+   }
+   
+   .postform-form {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;    
+        
+   }
+
+     
+   .postform-textarea {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;       
+   }
+
+     
+   .postform-button {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;       
+   }

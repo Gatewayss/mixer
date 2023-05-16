@@ -9,12 +9,13 @@ import PostList from '../../components/PostList/PostList';
 const Home = () => {
   
     return (    
-       <div>
-       <Header />
-        This is the home page
+       <div className="home-container">
+        <Header />  
+        <main >  
         <PostForm />
         <PostList />
         {/* <Sidebar /> */}
+        </main>  
       </div>
     
     );

@@ -7,7 +7,7 @@ const Challenge = () => {
  
   return (
   
-      <div>
+      <div className="challenge-container">
         <Header />
         This is the challenge
       </div>
