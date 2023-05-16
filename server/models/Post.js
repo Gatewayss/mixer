@@ -2,12 +2,6 @@ const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const postSchema = new Schema({
-
-    // clientId: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'User'
-    // },
-
   postText: {
     type: String,
     required: 'You need to leave a post!',

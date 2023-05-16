@@ -51,7 +51,7 @@ const resolvers = {
     },
     addPost: async (parent, { postText }, context) => {
       if (context.user) {
-        const newPost = await Post.create({
+        const post = await Post.create({
           postText,
           postAuthor: context.user.username,
         });
@@ -61,9 +61,21 @@ const resolvers = {
           { $addToSet: { posts: post._id } }
         );
 
-        return newPost;
+        return post;
       }
       throw new AuthenticationError('You need to be logged in!');
+    },
+    addProfilePic: async (parent, profilePic, context) => {
+      if (context.user) {
+        return User.findOneAndUpdate(
+          { _id: context.user._id },
+          profilePic, 
+          {
+            new: true,
+          }
+        );
+      }
+      throw new AuthenticationError('Something went wrong!');
     },
     addComment: async (parent, { postId, commentText }, context) => {
       if (context.user) {
