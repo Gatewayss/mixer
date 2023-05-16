@@ -3,14 +3,14 @@ const { Schema, model } = require('mongoose');
 
 const postSchema = new Schema({
 
-    clientId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-    },
+    // clientId: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'User'
+    // },
 
   postText: {
     type: String,
-    required: 'You need to leave a thought!',
+    required: 'You need to leave a post!',
     minlength: 1,
     maxlength: 280,
     trim: true,
