@@ -1,0 +1,26 @@
+[
+    {
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
+        "postAuthor": "author1"
+    },
+    {
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
+        "postAuthor": "author2"
+    },
+    {
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
+        "postAuthor": "author3"
+    },
+    {
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
+        "postAuthor": "author4"
+    },
+    {
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
+        "postAuthor": "author5"
+    },
+    {
+        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
+        "postAuthor": "author6"
+    }
+]
