@@ -17,7 +17,7 @@ const Home = () => {
     return (    
        <div className="home-container">
         <Header />  
-        <main className="home-container">
+        <main >
         <div className="home-postform-container">
           <PostForm />
         </div>
