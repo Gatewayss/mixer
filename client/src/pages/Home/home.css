@@ -1,3 +1,32 @@
-.home-container {    
+.main {
     width: 100%;
+    border: solid purple;
+    
 }
+.home-container {
+    margin-top: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: solid black;
+    
+    
+    
+}
+
+.home-postform-container {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+/* .home-postlist-container {
+    margin-top: 150px;
+} */
