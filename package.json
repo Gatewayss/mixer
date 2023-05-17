@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./server/index.js",
+    "dev": "concurrently \"cd server && node index.js\" \"cd client && npm run start\"",
     "seeds": "node ./server/seeders/seed.js"
   },
   "repository": {
