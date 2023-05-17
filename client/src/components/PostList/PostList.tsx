@@ -20,10 +20,7 @@ const PostList:FunctionComponent<PostProps> = ( {posts
   }
   
   return (
-    <div className="postlist-container">
-      <div>
-      This is the post list
-      </div>
+    <div className="postlist-container">  
       {posts &&
         posts.map((post: Post ) => (
           <div key={post._id} >
