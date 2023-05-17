@@ -1,14 +1,30 @@
-import React from 'react';
-import './postList.css';
+import React, {FunctionComponent} from 'react';
+import { Link } from 'react-router-dom';
+import "./postList.css"
 
-const PostList = () => {
+interface Post  {
+  _id: string
+  postText: string
+  postAuthor: string
+  createdAt: string
+}
+
+type PostProps = {
+  posts: any 
+}
+
+const PostList:FunctionComponent<PostProps> = ( {posts 
+}) => {
+  if (!posts.length) {
+    return <h3>No Posts Yet</h3>;
+  }
   
   return (
     <div className="postlist-container">
       <div>
       This is the post list
       </div>
-      {/* {posts &&
+      {posts &&
         posts.map((post: Post ) => (
           <div key={post._id} >
           <h4 >          
@@ -32,7 +48,7 @@ const PostList = () => {
             Join the discussion on this post.
           </Link>
         </div>
-      ))} */}
+      ))}
   </div>
 );
 };
