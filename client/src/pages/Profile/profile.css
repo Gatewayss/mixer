@@ -33,7 +33,7 @@
     height: 200px; 
     overflow: hidden; 
     border-radius: 50%;    
-    background-image: url('https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684264594/blank-profile-picture-gc25a26fa6_1280_copy_ve1thb.jpg');
+    /* background-image: url('https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684264594/blank-profile-picture-gc25a26fa6_1280_copy_ve1thb.jpg'); */
     background-size: 200px;
     background-position: 45%;
 

@@ -4,8 +4,10 @@ import './sidebar.css';
 const Sidebar = () => {
   
     return (     
-       <div>
-        This is the sidebar
+       <div className="sidebar-container">
+        <div>picture</div>
+        <div>picture</div>
+        <div>picture</div>
       </div>      
     );
   };

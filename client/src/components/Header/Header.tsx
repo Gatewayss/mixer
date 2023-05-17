@@ -1,10 +1,28 @@
-import React from 'react';
-import './header.css';
+import React, { MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
+import "./header.css"
 import Navbar from '../../components/Navbar/Navbar';
+
+import Auth from '../../utils/auth';
+import { QUERY_USER, QUERY_ME } from '../../utils/queries';
+
+
+import { useQuery } from '@apollo/client';
+import {  useParams } from 'react-router-dom';
 
 
 const Header = () => {
+  const { username: userParam } = useParams();
+
+  const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
+    variables: { username: userParam },
+  });
+   const user = data?.me || data?.user || {};
+
+  // const logout = (event: MouseEvent<HTMLButtonElement>) => {
+  //   event.preventDefault();
+  //   Auth.logout();
+  // };
   
     return (     
       <header className="header-container">     
@@ -18,13 +36,17 @@ const Header = () => {
         <Navbar />
       </div>
 
-      <div className="header-profile">      
+      <div className="header-profile">   
+      {Auth.loggedIn() ? (
+          <>   
         <Link className="header-pic-container" to="/me">
           <div className="header-profile-pic">
             <img className="header-image" 
-            src="https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684264594/blank-profile-picture-gc25a26fa6_1280_copy_ve1thb.jpg" alt="user pic"></img>
+            src={user.profilePic} alt="user pic"></img>
           </div>
-        </Link>         
+        </Link>   
+        </>
+          ) : null }      
       </div>
     </header>
    
