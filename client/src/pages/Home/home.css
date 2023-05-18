@@ -1,9 +1,15 @@
 .home-container {
-    width: 100%;
-    border: solid purple;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;   
+    /* border: solid purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    
     
 }
-.main {
+/* .main {
     margin-top: 132px;
     display: flex;
     flex-direction: column;
@@ -13,6 +19,13 @@
     
     
     
+} */
+
+.home-header-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
 }
 
 .home-postform-container {

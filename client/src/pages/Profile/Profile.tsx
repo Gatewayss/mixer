@@ -25,7 +25,7 @@ const Profile = () => {
   if (Auth.loggedIn() 
   && Auth.getProfile().data.username === userParam
   ) {
-     <Header/>
+    //  <Header/>
     return <Navigate to="/me" />;
   }
 
@@ -47,45 +47,47 @@ const Profile = () => {
   }
   
     return (     
-       <div className="profile-container">
-         <Header /> 
+      <div className="profile-container">
+        <div className="profile-header-container">
+          <Header /> 
+        </div>
+         
         <div className="pic-link">
-        {!userParam && (
-           <Link className="pic-container" to="/picture/me">
-           <div className="profile-pic">
-               <img className="image" src={user.profilePic} alt="user pic"></img>
-             </div>
-         </Link>
-       )} 
-       </div>
-     
-      {userParam && (
-          <div className="pic-container" >
+          {!userParam && (
+            <Link className="pic-container" to="/picture/me">
             <div className="profile-pic">
                 <img className="image" src={user.profilePic} alt="user pic"></img>
               </div>
-          </div>
-       )}
-            
-      <div >
-        <h2 >
-          Viewing {userParam ? `${user.username}'s` : 'your'} profile.
-        </h2>
-      
-        {!userParam && (
-          <div
-            
-           
-          >
-            <PostForm />
-          </div>
-        )}
-          <div >
-          <PostList
-            posts={user.posts}        
-           
-          />
+            </Link>
+          )} 
         </div>
+        <div className="pic-link">
+            {userParam && (
+              <div className="pic-container" >
+                <div className="profile-pic">
+                    <img className="image" src={user.profilePic} alt="user pic"></img>
+                  </div>
+              </div>
+            )}
+        </div>
+      <div className="profile-post-container">
+
+        <div className="profile-name">
+          <h2 >
+            Viewing {userParam ? `${user.username}'s` : 'your'} profile
+          </h2>
+        </div>
+
+        {!userParam && (
+        <div className="profile-postform-container">
+          <PostForm />
+        </div>
+        )}
+
+        <div className="profile-postlist-container">
+          <PostList posts={user.posts} />
+        </div>
+
       </div>
     </div>
   );

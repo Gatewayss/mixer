@@ -1,9 +1,46 @@
 .postlist-container {
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
+   /* align-items: center; */
    width: 100%;
+   /* border: solid green; */ 
     
     
 }
+
+.post1{
+   border: solid lightgray;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   margin: 0 50px;
+}
+
+/* .post2{
+   border: solid yellow;
+}
+
+
+.post3{
+   border: solid blue;
+} */
+
+
+/* .post4{
+   border: solid green;
+} */
+
+.post5{
+   border: solid lightgray;
+   padding: 5px;
+}
+
+/* .post6{
+   border: solid purple;
+}
+
+.post7{
+   border: solid black;
+} */

@@ -1,12 +1,18 @@
 .profile-container {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    /* justify-content: center;    */
    
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
 }
 
+.profile-header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .pic-container {
     display: flex;
     align-items: center; 
@@ -15,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid black;
+    /* border: solid black; */
     
 }
 
@@ -43,4 +49,27 @@
     width: 100%; 
     height: 100%; 
     object-fit: cover;  
+   }
+
+   .profile-name {
+    text-align: center;
+   }
+
+   .profile-postform-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: solid yellow; */
+   }
+
+   .profile-postlist-container {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+   }
+
+   .profile-post-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
    }

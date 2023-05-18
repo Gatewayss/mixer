@@ -23,17 +23,17 @@ const PostList:FunctionComponent<PostProps> = ( {posts
     <div className="postlist-container">  
       {posts &&
         posts.map((post: Post ) => (
-      <div key={post._id} >
-        <h4 >          
-          <Link to={`/profiles/${post.postAuthor}`}>
-                {post.postAuthor} <br />
-            <span >had this post on {post.createdAt}</span>
-          </Link>            
-        </h4>
-        <div >
-          <p>{post.postText}</p>
+        <div className="post1"key={post._id} >
+          <h4 className="post2">          
+            <Link className="post3"to={`/profiles/${post.postAuthor}`}>
+                  {post.postAuthor} <br />
+              <span className="post4">{post.createdAt}</span>
+            </Link>            
+          </h4>
+        <div className="post5">
+          <p className='post6'>{post.postText}</p>
         </div>
-        <Link to={`/posts/${post._id}`}>
+        <Link className='post7'to={`/posts/${post._id}`}>
             Join the discussion on this post.
         </Link>
       </div>

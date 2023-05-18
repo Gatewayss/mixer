@@ -13,8 +13,8 @@
   .upload-profile-pic{
       display: flex;
       flex-wrap: wrap;
-      /*margin-top: 50px; 
-      margin-bottom: 0px;*/
+      margin-top: 50px; 
+      margin-bottom: 0px;
       border: solid 8px lightgray;      
       width: 200px; 
       height: 200px; 
@@ -58,6 +58,8 @@
       display: flex;
       flex-wrap: wrap;
      /* margin: 20px; */
+     margin-top: 50px; 
+     margin-bottom: 0px;
       border: solid 8px lightgray;      
       width: 200px; 
       height: 200px; 
