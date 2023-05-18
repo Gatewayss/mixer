@@ -111,6 +111,12 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanva
 					setLineOpacity(e.target.value / 100);
 				}}
 			/>
+			<button
+				onClick={() => {
+					setLineColor('#FFFFFF');
+				}}
+				>Erase</button>
+				
 			<button type="button"
 				onClick={saveCanvasImage}>Save
 			</button>
