@@ -27,27 +27,40 @@ const SinglePost = () => {
   
     return (
      <div className='singlepost-container'>
-      <Header />
-      <h3 >
-        {post.postAuthor} <br />
-        <span >
-          had this thought on {post.createdAt}
-        </span>
-      </h3>
-      <div >
-        <blockquote
-         
-        >
-          {post.postText}
-        </blockquote>
-      </div>
+        <div className='singlepost-header'>
+          <Header />
+        </div>
 
-      <div className="my-5">
-        <CommentList comments={post.comments} />
+        <div className='singlepost-block'>
+
+          <div className='singlepost-content'>  
+            <div>
+
+              <h3 className='singlepost-title'>
+                {post.postAuthor} <br />
+                <span >
+                  had this thought on {post.createdAt}
+                </span>
+              </h3>   
+            </div>       
+           
+            <div className="singlepost-text" >
+              <blockquote>
+                {post.postText}
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+      <div className='singlepost-comment-container'>
+        <div className="singlepost-commentlist">
+          <CommentList comments={post.comments} />
+        </div>        
+        <div className='singlepost-commentform'>
+          <CommentForm postId={post._id} />
+        </div>
       </div>
-      <div >
-        <CommentForm postId={post._id} />
-      </div>
+     
     </div>
    
     );

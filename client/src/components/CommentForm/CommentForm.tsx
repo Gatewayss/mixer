@@ -1,4 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import './commentForm.css'
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
@@ -42,7 +43,7 @@ const CommentForm = ({ postId }: any) => {
   };
 
   return (
-    <div>
+    <div className="commentform-container">
       <h4>What are your thoughts on this post?</h4>
 
       {Auth.loggedIn() ? (

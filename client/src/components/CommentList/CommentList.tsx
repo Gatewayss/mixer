@@ -20,11 +20,10 @@ const CommentList:FunctionComponent<CommentProps> = ({ comments }) => {
   }
 
   return (
-    <>
+    <div className="commentlist-container">
       <h3
         className="p-5 display-inline-block"
-        style={{ borderBottom: '1px dotted #1a1a1a' }}
-      >
+        style={{ borderBottom: '1px dotted #1a1a1a' }}>
         Comments
       </h3>
       <div className="flex-row my-4">
@@ -43,7 +42,7 @@ const CommentList:FunctionComponent<CommentProps> = ({ comments }) => {
           </div>
         ))}
     </div>
-  </>
+  </div>
 );
 };
 

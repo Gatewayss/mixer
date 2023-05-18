@@ -26,6 +26,7 @@ useEffect(() => {
 
 // Function for starting the drawing
 const startDrawing = (e) => {
+
 	ctxRef.current.beginPath();
 	ctxRef.current.moveTo(
 	e.nativeEvent.offsetX,

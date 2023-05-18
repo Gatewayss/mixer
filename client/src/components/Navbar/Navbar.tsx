@@ -46,20 +46,8 @@ const Navbar = () => {
         </div>         
         
       </>
-       ) : (
-      <>
-        <Link to="/login">
-        <div >
-          Login
-          </div>
-        </Link>
-        <Link to="/signup">
-        <div >
-          Signup
-          </div>
-        </Link>
-      </>
-      )} 
+       ) : null }    
+      
     </div>
 
 );
