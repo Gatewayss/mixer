@@ -21,7 +21,11 @@ const Profile = () => {
 
   const user = data?.me || data?.user || {};
   
-  if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
+  
+  if (Auth.loggedIn() 
+  && Auth.getProfile().data.username === userParam
+  ) {
+     <Header/>
     return <Navigate to="/me" />;
   }
 
@@ -33,7 +37,7 @@ const Profile = () => {
   if (!user?.username) {
     return (
       <div>
-        <Header/>
+        <Header/>  
       <h4>
         You need to be logged in to see this. Use the navigation links above to
         sign up or log in!
@@ -44,7 +48,7 @@ const Profile = () => {
   
     return (     
        <div className="profile-container">
-        <Header />
+         <Header /> 
         <div className="pic-link">
         {!userParam && (
            <Link className="pic-container" to="/picture/me">

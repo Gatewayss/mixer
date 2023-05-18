@@ -14,8 +14,7 @@ const typeDefs = gql`
     _id: ID
     postText: String
     postAuthor: String
-    createdAt: String
-    clientId: String
+    createdAt: String    
     comments: [Comment]!
   }
 
