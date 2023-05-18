@@ -62,6 +62,7 @@ return (
 		setLineColor={setLineColor}
 		setLineWidth={setLineWidth}
 		setLineOpacity={setLineOpacity}
+		canvasRef={canvasRef}
 		/>
 		<canvas id="Mcanvas"
 		onMouseDown={startDrawing}
