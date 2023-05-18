@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanvasImage, deleteCanvasImage }) => {
 
 	const openDialog = () => {
@@ -47,6 +45,43 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanva
 					setLineColor(e.target.value);
 				}}
 			/>
+			<button
+				className="rbg-buttons"
+				style={{ backgroundColor: '#FF0000' }}
+				onClick={() => {
+					setLineColor('#FF0000');
+				}}></button>
+			<button
+				className="rbg-buttons"
+				style={{ backgroundColor: '#FF7F00' }}
+				onClick={() => {
+					setLineColor('#FF7F00');
+				}}></button>
+			<button
+				className="rbg-buttons"
+				style={{ backgroundColor: '#FFFF00' }}
+				onClick={() => {
+					setLineColor('#FFFF00');
+				}}></button>
+			<button
+				className="rbg-buttons"
+				style={{ backgroundColor: '#00FF00' }}
+				onClick={() => {
+					setLineColor('#00FF00');
+				}}></button>
+			<button
+				className="rbg-buttons"
+				style={{ backgroundColor: '#0000FF' }}
+				onClick={() => {
+					setLineColor('#0000FF');
+				}}></button>
+			<button
+				className="rbg-buttons"
+				style={{ backgroundColor: '#4B0082' }}
+				onClick={() => {
+					setLineColor('#4B0082');
+				}}></button>
+
 			<label>Brush Width </label>
 			<input
 				type="range"
@@ -57,14 +92,14 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanva
 				}}
 			/>
 			<label>Brush Opacity</label>
-		<input
-		  type="range"
-		  min="1"
-		  max="100"
-		  onChange={(e) => {
-			setLineOpacity(e.target.value / 100);
-		  }}
-		/>
+			<input
+				type="range"
+				min="1"
+				max="100"
+				onChange={(e) => {
+					setLineOpacity(e.target.value / 100);
+				}}
+			/>
 			<button type="button"
 				onClick={saveCanvasImage}>Save
 			</button>
