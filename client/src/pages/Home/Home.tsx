@@ -15,9 +15,11 @@ const Home = () => {
   const posts = data?.posts || [];
   
     return (    
-       <div className="home-container">
-        <Header />   
-        <main >
+      <div className="home-container">
+        <div className="home-header-container">
+          <Header />  
+        </div>      
+        
         <div className="home-postform-container">
           <PostForm />
         </div>
@@ -30,9 +32,9 @@ const Home = () => {
               
             />
           )}
-        </div>
-        {/* <Sidebar /> */}
-      </main>
+          </div>
+          {/* <Sidebar /> */}
+       
       </div>
     
     );
