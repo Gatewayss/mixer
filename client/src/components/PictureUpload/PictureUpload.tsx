@@ -61,13 +61,12 @@ const PictureUpload = () => {
   return (
      
     <div>      
-      <Header />    
+     <Header />    
    {!url && (
          
         <div className="upload-pic-container">
             <div className="upload-profile-pic">
-                <img className="upload-image" 
-                src='https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684264594/blank-profile-picture-gc25a26fa6_1280_copy_ve1thb.jpg' alt="user pic"></img>
+            <img className="upload-image" src={user.profilePic} alt="user pic"></img>
             </div>
                 
           <div className="file-input">            

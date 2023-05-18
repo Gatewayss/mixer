@@ -16,7 +16,7 @@ const Home = () => {
   
     return (    
        <div className="home-container">
-        <Header />  
+        <Header />   
         <main >
         <div className="home-postform-container">
           <PostForm />

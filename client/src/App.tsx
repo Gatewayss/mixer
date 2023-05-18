@@ -16,6 +16,7 @@ import Challenge from './pages/Challenge/Challenge';
 import Profile from './pages/Profile/Profile';
 import SinglePost from './pages/SinglePost/SinglePost';
 import PictureUpload from './components/PictureUpload/PictureUpload';
+// import Header from './components/Header/Header'
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -23,7 +24,7 @@ const httpLink = createHttpLink({
 
 const authLink = setContext((_, { headers }) => {
 
-  const token = localStorage.getItem('id_token');
+const token: any = localStorage.getItem('id_token');
  
   return {
     headers: {
@@ -44,6 +45,8 @@ function App() {
     <ApolloProvider client={client}>
     <Router>
     <div >
+      {/* <Header />
+      <div> */}
      <Routes>
         <Route 
           path="/" 
@@ -87,6 +90,7 @@ function App() {
         />
         </Routes>        
     </div>
+    {/* </div> */}
     </Router>
     </ApolloProvider>
   );
