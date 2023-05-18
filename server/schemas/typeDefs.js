@@ -7,7 +7,7 @@ const typeDefs = gql`
     email: String
     password: String
     profilePic: String
-    post: [Post]!
+    posts: [Post]!
   }
 
   type Post {
