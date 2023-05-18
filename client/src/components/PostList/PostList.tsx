@@ -20,36 +20,25 @@ const PostList:FunctionComponent<PostProps> = ( {posts
   }
   
   return (
-    <div className="postlist-container">
-      <div>
-      This is the post list
-      </div>
+    <div className="postlist-container">  
       {posts &&
         posts.map((post: Post ) => (
-          <div key={post._id} >
-          <h4 >          
-              <Link
-               
-                to={`/profiles/${post.postAuthor}`}
-              >
+      <div key={post._id} >
+        <h4 >          
+          <Link to={`/profiles/${post.postAuthor}`}>
                 {post.postAuthor} <br />
-                <span >
-                  had this post on {post.createdAt}
-                </span>
-              </Link>            
-          </h4>
-          <div >
-            <p>{post.postText}</p>
-          </div>
-          <Link
-           
-            to={`/posts/${post._id}`}
-          >
-            Join the discussion on this post.
-          </Link>
+            <span >had this post on {post.createdAt}</span>
+          </Link>            
+        </h4>
+        <div >
+          <p>{post.postText}</p>
         </div>
+        <Link to={`/posts/${post._id}`}>
+            Join the discussion on this post.
+        </Link>
+      </div>
       ))}
-  </div>
+    </div>
 );
 };
   
