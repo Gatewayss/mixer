@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Puff } from 'react-loading-icons'
 import Menu from "./Menu";
 import "./canvas.css";
@@ -11,14 +11,12 @@ function Canvas() {
   const [brushShape, setBrushShape] = useState('round');
   const [lineColor, setLineColor] = useState("black");
   const [isAutoSaving, setIsAutoSaving] = useState(false);
-  const [lineOpacity, setLineOpacity] = useState(0.1);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
-	  ctx.globalAlpha = lineOpacity;
     ctx.strokeStyle = lineColor;
     ctx.lineWidth = lineWidth;
     ctxRef.current = ctx;
@@ -31,7 +29,7 @@ function Canvas() {
       };
       image.src = savedImage;
     }
-  }, [lineColor, lineWidth, lineOpacity]);
+  }, [lineColor, lineWidth]);
 
   const startDrawing = (e) => {
     if (brushShape === 'square') {
@@ -129,7 +127,6 @@ function Canvas() {
           canvasRef={canvasRef}
           brushShape={brushShape}
           setBrushShape={setBrushShape}
-		      setLineOpacity={setLineOpacity}
           saveCanvasImage={saveCanvasImage}
         />
 

@@ -1,4 +1,4 @@
-const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanvasImage, deleteCanvasImage, setBrushShape }) => {
+const Menu = ({ setLineColor, setLineWidth, canvasRef, saveCanvasImage, deleteCanvasImage, setBrushShape }) => {
 
 	const openDialog = () => {
 		const dialog = document.getElementById("download-modal");
@@ -102,15 +102,6 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanva
 				}}
 			>round</button>
 
-			<label>Brush Opacity</label>
-			<input
-				type="range"
-				min="1"
-				max="100"
-				onChange={(e) => {
-					setLineOpacity(e.target.value / 100);
-				}}
-			/>
 			<button
 				onClick={() => {
 					setLineColor('#FFFFFF');
