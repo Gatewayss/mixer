@@ -8,6 +8,7 @@ function Canvas() {
   const ctxRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false);
   const [lineWidth, setLineWidth] = useState(5);
+  const [brushShape, setBrushShape] = useState('round');
   const [lineColor, setLineColor] = useState("black");
   const [isAutoSaving, setIsAutoSaving] = useState(false);
   const [lineOpacity, setLineOpacity] = useState(0.1);
@@ -33,6 +34,20 @@ function Canvas() {
   }, [lineColor, lineWidth, lineOpacity]);
 
   const startDrawing = (e) => {
+    if (brushShape === 'square') {
+      const ctx = ctxRef.current;
+      ctx.fillRect(
+        e.nativeEvent.offsetX - lineWidth / 2,
+        e.nativeEvent.offsetY - lineWidth / 2,
+        lineWidth,
+        lineWidth
+      );
+    } else if (brushShape === 'round') {
+      const ctx = ctxRef.current;
+      ctx.beginPath();
+      ctx.moveTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
+    }
+
     const ctx = ctxRef.current;
     ctx.beginPath();
     ctx.moveTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
@@ -41,6 +56,10 @@ function Canvas() {
   };
 
   const endDrawing = () => {
+    if (brushShape === 'round') {
+      const ctx = ctxRef.current;
+      ctx.closePath();
+    }
     const ctx = ctxRef.current;
     ctx.closePath();
     setIsDrawing(false);
@@ -49,11 +68,12 @@ function Canvas() {
   const draw = (e) => {
     if (!isDrawing) {
       return;
-    }
-
+    }   
+    
     const ctx = ctxRef.current;
     const x = e.nativeEvent.offsetX;
     const y = e.nativeEvent.offsetY;
+    ctx.lineCap = brushShape === 'square' ? 'square' : 'round';
 
     ctx.lineTo(x, y);
     ctx.stroke();
@@ -107,7 +127,9 @@ function Canvas() {
           setLineWidth={setLineWidth}
           deleteCanvasImage={deleteCanvasImage}
           canvasRef={canvasRef}
-		  setLineOpacity={setLineOpacity}
+          brushShape={brushShape}
+          setBrushShape={setBrushShape}
+		      setLineOpacity={setLineOpacity}
           saveCanvasImage={saveCanvasImage}
         />
 

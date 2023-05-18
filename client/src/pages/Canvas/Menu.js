@@ -1,4 +1,4 @@
-const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanvasImage, deleteCanvasImage }) => {
+const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanvasImage, deleteCanvasImage, setBrushShape }) => {
 
 	const openDialog = () => {
 		const dialog = document.getElementById("download-modal");
@@ -91,6 +91,17 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanva
 					setLineWidth(e.target.value);
 				}}
 			/>
+			<button
+				onClick={() => {
+					setBrushShape('square');
+				}}
+			>square</button>
+			<button
+				onClick={() => {
+					setBrushShape('round');
+				}}
+			>round</button>
+
 			<label>Brush Opacity</label>
 			<input
 				type="range"
