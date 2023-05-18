@@ -1,7 +1,7 @@
-import React from "react";
-import "./canvas.css";
+import { useState } from "react";
 
-const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef }) => {
+const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef, saveCanvasImage, deleteCanvasImage }) => {
+
 	const openDialog = () => {
 		const dialog = document.getElementById("download-modal");
 		dialog.showModal();
@@ -57,14 +57,21 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity, canvasRef }) => {
 				}}
 			/>
 			<label>Brush Opacity</label>
-			<input
-				type="range"
-				min="1"
-				max="100"
-				onChange={(e) => {
-					setLineOpacity(e.target.value / 100);
-				}}
-			/>
+		<input
+		  type="range"
+		  min="1"
+		  max="100"
+		  onChange={(e) => {
+			setLineOpacity(e.target.value / 100);
+		  }}
+		/>
+			<button type="button"
+				onClick={saveCanvasImage}>Save
+			</button>
+
+			<button type="button"
+				onClick={deleteCanvasImage}>Clear
+			</button>
 
 			<button
 				type="button"
