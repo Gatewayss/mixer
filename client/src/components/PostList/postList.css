@@ -94,6 +94,18 @@
   }
 
 
+ @media only screen and (max-width: 768px) {
+   .post1 {
+      width: 550px;
+   }
+
+   .post-pic {
+      width: 550px;
+      height: 550px;
+   }
+ }
+
+
 @media only screen and (max-width: 600px) {
    .post1 {
       width: 425px;
