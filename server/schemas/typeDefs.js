@@ -10,6 +10,12 @@ const typeDefs = gql`
     posts: [Post]!
   }
 
+  type Challenge {
+    _id: ID
+    challengeTitle: String
+    challengeDescription: String
+  }
+
   type Post {
     _id: ID
     postText: String
@@ -36,6 +42,7 @@ const typeDefs = gql`
     posts(username: String): [Post]
     post(postId: ID!): Post
     me: User
+    challenge: [Challenge]
   }
 
   type Mutation {
