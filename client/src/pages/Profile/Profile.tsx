@@ -25,7 +25,7 @@ const Profile = () => {
   if (Auth.loggedIn() 
   && Auth.getProfile().data.username === userParam
   ) {
-    //  <Header/>
+     <Header/>
     return <Navigate to="/me" />;
   }
 

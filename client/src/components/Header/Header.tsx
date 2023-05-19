@@ -14,12 +14,17 @@ import {  useParams } from 'react-router-dom';
 
 
 const Header = () => {
-  const { username: userParam } = useParams();
+  // const { username: userParam }: any = useParams();
 
-  const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
-    variables: { username: userParam },
-  });
-   const user = data?.me || data?.user || {};
+  const { loading, data } = useQuery(QUERY_ME
+  //   , {
+  //   variables: { username: userParam },
+  // }
+  );
+   const user = data?.me || 
+  //  data?.user 
+  //  || 
+   {};
   
   
     return (     
@@ -41,10 +46,12 @@ const Header = () => {
       <div className="header-profile-info">
           {Auth.loggedIn() ? (
           <>
-           <Link className="header-pic-container" to="/me">        
+           <Link className="header-pic-container" to="/me">   
+              
               <div className="header-profile-pic">
                 <img className="header-image" src={user.profilePic} alt="user pic"></img>
              </div>
+           
             </Link>    
           </>
       ) : (

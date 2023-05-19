@@ -28,19 +28,19 @@ const Navbar = () => {
     <div className="navbar-container">
       {Auth.loggedIn() ? (
       <>
-        <Link  to="/canvas">
+        <Link className="navbar-canvas" to="/canvas">
           <div className="nav-link">
           Canvas
           </div>
       
         </Link>
-        <Link  to="/challenge">
+        <Link  className="navbar-challenge" to="/challenge">
         <div className="nav-link">
           Challenge
           </div>
         </Link>
-        <div className="header-logout">
-          <button  
+        <div className="navbar-logout">
+          <button className="navbar-logout-label" 
           onClick={logout}
           >Logout</button>
         </div>         
