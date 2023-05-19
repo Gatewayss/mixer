@@ -15,8 +15,6 @@ import Canvas from './pages/Canvas/Canvas';
 import Challenge from './pages/Challenge/Challenge';
 import Profile from './pages/Profile/Profile';
 import SinglePost from './pages/SinglePost/SinglePost';
-import PictureUpload from './components/PictureUpload/PictureUpload';
-// import Header from './components/Header/Header'
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -44,9 +42,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
     <Router>
-    <div>
-      {/* <Header />
-      <div> */}
+    <div>  
      <Routes>
         <Route 
           path="/" 
@@ -76,15 +72,7 @@ function App() {
           path="/profiles/:username" 
           element={<Profile />}
         />
-        <Route 
-          path="/picture/me" 
-          element={<PictureUpload />}
-        />
-        <Route               
-            path="/picture" 
-            element={<PictureUpload />}
-          />
-        <Route 
+               <Route 
           path="/posts/:postId" 
           element={<SinglePost />} 
         />

@@ -61,7 +61,7 @@ const PictureUpload = () => {
   return (
      
     <div>      
-     <Header />    
+     
    {!url && (
          
         <div className="upload-pic-container">
