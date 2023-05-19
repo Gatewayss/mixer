@@ -131,9 +131,7 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
           
           {error && (
             <div className="error-message">
-              <div>
               {error.message}
-              </div>
             </div>
           )}
         </form>
