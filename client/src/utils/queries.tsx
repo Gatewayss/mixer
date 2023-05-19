@@ -10,6 +10,7 @@ export const QUERY_USER = gql`
       posts {
         _id
         postText
+        postPic
         createdAt
       }
     }
@@ -21,6 +22,7 @@ export const QUERY_POSTS = gql`
     posts {
       _id
       postText
+      postPic
       postAuthor
       createdAt
     }
@@ -32,7 +34,8 @@ export const QUERY_SINGLE_POST = gql`
     post(postId: $postId) {
       _id
       postText
-      postAuthor
+      postPic
+      postAuthor      
       createdAt
       comments {
         _id

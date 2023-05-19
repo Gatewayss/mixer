@@ -35,10 +35,11 @@ export const ADD_PROFILEPIC = gql`
 `;
 
 export const ADD_POST = gql`
-  mutation addPost($postText: String!) {
-    addPost(postText: $postText) {
+  mutation addPost($postText: String, $postPic: String) {
+    addPost(postText: $postText, postPic: $postPic) {
       _id
       postText
+      postPic
       postAuthor
       createdAt
       comments {

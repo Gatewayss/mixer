@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent, MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import './postForm.css'
@@ -10,6 +10,7 @@ import Auth from '../../utils/auth';
 
 const PostForm = () => {
 const [postText, setPostText] = useState('');
+const [postPic, setPostPic] = useState('');
 
 const [addPost, { error }] = useMutation(ADD_POST, {   
     update(cache, { data: { addPost } }) {
@@ -60,6 +61,43 @@ const [addPost, { error }] = useMutation(ADD_POST, {
     setPostText(value);    
   }
 };
+
+//
+
+const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {   
+  e.preventDefault();
+  try {
+    const { data } = await addPost({     
+      variables: {
+        postPic,
+        thoughtAuthor: Auth.getProfile().data.username,
+      },
+    });
+
+    setPostPic('');
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+  const uploadImage = (files: any) => {
+    const data = new FormData()
+    data.append("file", files[0])    
+    data.append("upload_preset", "ttq2s0sa")
+    data.append("cloud_name","dkm1hkwdl")
+    fetch("  https://api.cloudinary.com/v1_1/dkm1hkwdl/image/upload",{
+      method:"post",
+      body: data
+    })
+     .then(resp => resp.json())    
+    .then(data => {
+      
+    setPostPic(data.url);     
+   
+    
+    })
+    .catch(err => console.log(err))
+    }
   
   return (
     <div className="postform-container">
@@ -88,11 +126,11 @@ const [addPost, { error }] = useMutation(ADD_POST, {
             Add Post
           </button>
         </div>
-        <div className="postpic-button">
+        {/* <div className="postpic-button">
           <button  type="submit">
             Add Drawing
           </button>
-        </div>
+        </div> */}
         </div>
         
         {error && (
@@ -101,6 +139,15 @@ const [addPost, { error }] = useMutation(ADD_POST, {
           </div>
         )}
       </form>
+      <div className="file-input">            
+              <input id="file"  className="file" type="file" onChange= {(e: ChangeEvent<HTMLInputElement>)=> uploadImage(e.currentTarget.files)}></input>
+              <label htmlFor="file">Select A Drawing
+              <p className="file-name"></p>
+              </label>
+            </div>  
+            <div>
+                <button className="save-btn"type="button" onClick={uploadUrl}>Save Drawing</button>
+                </div>  
       </>
        ) : (
         <p>

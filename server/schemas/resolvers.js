@@ -5,7 +5,7 @@ const { signToken } = require('../utils/auth');
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate('post');
+      return User.find().populate('posts');
     },
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate('posts');
@@ -52,10 +52,11 @@ const resolvers = {
 
       return { token, user };
     },
-    addPost: async (parent, { postText }, context) => {
+    addPost: async (parent, { postText, postPic }, context) => {
       if (context.user) {
         const post = await Post.create({
           postText,
+          postPic,
           postAuthor: context.user.username,
         });
 

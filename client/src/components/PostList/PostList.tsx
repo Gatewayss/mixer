@@ -5,6 +5,7 @@ import "./postList.css"
 interface Post  {
   _id: string
   postText: string
+  postPic: string
   postAuthor: string
   createdAt: string
 }
@@ -33,6 +34,14 @@ const PostList:FunctionComponent<PostProps> = ( {posts
         <div className="post5">
           <p className='post6'>{post.postText}</p>
         </div>
+        {post.postPic && (
+          <div className="post-pic-container">
+            <div className="post-pic">
+              <img src={post.postPic} alt='drawing'></img>
+            </div>
+          </div>
+        )}
+
         <Link className='post7'to={`/posts/${post._id}`}>
             Join the discussion on this post.
         </Link>
