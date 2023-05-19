@@ -23,6 +23,7 @@
        flex-direction: column;
        align-items: center;
        width: 100%;    
+       /* border: solid blue; */
         
    }
 
@@ -31,11 +32,27 @@
        display: flex;
        flex-direction: column;
        align-items: center;
+       width: 400px;   
+       /* border: solid red;     */
+   }
+
+   .postform-btn-container {
+       display: flex;     
+       align-items: center;
+      width: 400px;
+      margin: 10px;
+      /* border: solid orange; */
+   }
+     
+   .postform-button {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
        width: 100%;       
    }
 
-     
-   .postform-button {
+      
+   .postpic-button {
        display: flex;
        flex-direction: column;
        align-items: center;

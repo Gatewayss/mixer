@@ -20,10 +20,11 @@
     display: flex;
     justify-content: center;
     /* border: solid red; */
-    width: 200px;
+    width: 250px;
     font-size: x-large;
-    padding-left: 50px;
-   
+    /* padding: 0 100px; */
+    /* padding-left: 50px; */
+  
 }
 
 .header-logo a{
@@ -102,6 +103,7 @@
   margin: 0;  
   font-size: 80px;      
   display: flex;
+ 
 }
 
 .m{

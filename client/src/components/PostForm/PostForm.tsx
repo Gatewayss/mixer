@@ -73,20 +73,28 @@ const [addPost, { error }] = useMutation(ADD_POST, {
        
         onSubmit={handleFormSubmit}
       >
-        <div className="postform-textarea">
+        <div >
           <textarea
+          className="postform-textarea"
             name="postText"
             placeholder="Here's a new post..."
             value={postText}           
             onChange={handleChange}
           ></textarea>
         </div>      
-
+        <div className="postform-btn-container">
         <div className="postform-button">
           <button  type="submit">
             Add Post
           </button>
         </div>
+        <div className="postpic-button">
+          <button  type="submit">
+            Add Drawing
+          </button>
+        </div>
+        </div>
+        
         {error && (
           <div >
              {error.message}
