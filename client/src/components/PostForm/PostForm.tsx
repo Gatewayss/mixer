@@ -10,7 +10,7 @@ import Auth from '../../utils/auth';
 
 const PostForm = () => {
 const [postText, setPostText] = useState('');
-const [postPic, setPostPic] = useState('');
+const [postPicUrl, setPostPicUrl] = useState('');
 
 const [addPost, { error }] = useMutation(ADD_POST, {   
     update(cache, { data: { addPost } }) {
@@ -69,12 +69,12 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
   try {
     const { data } = await addPost({     
       variables: {
-        postPic,
+        postPic: postPicUrl,
         thoughtAuthor: Auth.getProfile().data.username,
       },
     });
 
-    setPostPic('');
+    setPostPicUrl('');
   } catch (err) {
     console.error(err);
   }
@@ -92,7 +92,7 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
      .then(resp => resp.json())    
     .then(data => {
       
-    setPostPic(data.url);     
+    setPostPicUrl(data.url);     
    
     
     })
@@ -125,13 +125,8 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
           <button  type="submit">
             Add Post
           </button>
-        </div>
-        {/* <div className="postpic-button">
-          <button  type="submit">
-            Add Drawing
-          </button>
-        </div> */}
-        </div>
+        </div>      
+      </div>
         
         {error && (
           <div >
@@ -139,15 +134,35 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
           </div>
         )}
       </form>
-      <div className="file-input">            
-              <input id="file"  className="file" type="file" onChange= {(e: ChangeEvent<HTMLInputElement>)=> uploadImage(e.currentTarget.files)}></input>
-              <label htmlFor="file">Select A Drawing
-              <p className="file-name"></p>
+      {/* <div className="post-pic-container"> */}
+      {!postPicUrl && (
+      <div className="postfile-input">            
+              <input id="postfile"  className="postfile" type="file" onChange= {(e: ChangeEvent<HTMLInputElement>)=> uploadImage(e.currentTarget.files)}></input>
+              <label htmlFor="postfile">Select A Picture or Drawing
+              <p className="postfile-name"></p>
               </label>
-            </div>  
-            <div>
-                <button className="save-btn"type="button" onClick={uploadUrl}>Save Drawing</button>
-                </div>  
+        </div> 
+        )} 
+        {postPicUrl && (
+            <div className="preview-postpic-container">             
+                        
+                <div className="preview-post-pic">
+                  <img className="preview-postimage" src={postPicUrl} alt="post pic"></img>
+                </div>
+                <div className="postpic-button-container">         
+          <div className="change-postfile-input">            
+            <input id="change-postfile"  className="change-postfile" type="file" onChange= {(e: ChangeEvent<HTMLInputElement>)=> uploadImage(e.target.files)}></input>
+            <label htmlFor="change-postfile">Select Different Picture
+            <p className="postfile-name"></p>
+            </label>
+          </div>         
+        </div>      
+                <div>
+                <button className="post-save-btn"type="button" onClick={uploadUrl}>Save New Picture</button>
+                </div>
+            </div>
+         )}
+         {/* </div> */}
       </>
        ) : (
         <p>
