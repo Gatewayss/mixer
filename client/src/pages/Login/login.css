@@ -1,12 +1,12 @@
 .login-container {
-  width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
-    padding: 20px;   
+    height: 100vh;    
+    /* padding: 20px;    */
     background-color: rgb(90, 90, 145);   
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -17,8 +17,9 @@
     align-items: center;
     width: 85%;
     max-width: 1000px;
-    min-width: 450px;
+    /* min-width: 600px; */
     min-height: 450px;  
+    margin: 10px;
     background-color: white;  
     border-radius: 10px;
    
@@ -32,10 +33,12 @@
     text-align: center;
     color: white;
     width: 70%;
+    /* min-width: 450px; */
     height: 600px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    background-color: rgb(47, 47, 118);   
+    background-color: rgb(47, 47, 118);  
+    /* padding: 5px;  */
   }
   
   .logo-header{
@@ -82,6 +85,7 @@
     justify-content: center;
     color: white;   
     width: 30%; 
+   
     height: 600px;  
    
     border-bottom-right-radius: 10px;
@@ -172,8 +176,15 @@
   
     @media only screen and (max-width: 992px) {
       .login-card {
-         flex-direction: column;
+         width: 100%;
+         margin: 0px;
         
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .login-card {
+         flex-direction: column;
+       
       }
   
       .login-left {
@@ -224,5 +235,14 @@
          margin-bottom: 3px;
         }
   }
-  
+/*   
+   @media only screen and (max-width: 600px) {
+    .login-card {
+     /* width: 100%; */
+     /* margin: 0;
+    }
+    .logo-header {
+      font-size: 100px;
+    } */
    
+    /* }  */ 
