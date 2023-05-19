@@ -102,13 +102,7 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
   return (
     <div className="postform-container">
 
-      <div className="postform-header">
-        <h3>
-          <span className="mix">Mix</span ><span className="it">it</span>
-          <span className="up">up</span><span className="dash">~</span> 
-          Think Differently. Create Differently. Share.
-        </h3>
-      </div>
+  
 
       {Auth.loggedIn() ? (
       <div className="postform-body"> 

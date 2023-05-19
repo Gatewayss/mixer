@@ -12,33 +12,7 @@
        
    }
    
-   .postform-header {
-       display: flex;
-       justify-content: center;  
-       text-align: center;    
-       width: 100%;
-       color: rgb(114, 44, 149);     
-
-   }
-
-   .mix {
-    color: rgb(98, 0, 255);
-    padding-right: 5px;
-   }
-   .it {
-    color:rgb(170, 0, 255);
-    padding-right: 5px;
-   }
-
-   .up {
-    color:rgb(255, 0, 157);
-    padding-right: 5px;
-   }
-
-   .dash {
-    color:rgb(255, 0, 85);
-    padding-right: 5px;
-   }
+   
 
    .postform-body {
     display: flex;
