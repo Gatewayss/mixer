@@ -27,23 +27,25 @@ const PostList:FunctionComponent<PostProps> = ( {posts
         <div className="post1"key={post._id} >
           <h4 className="post2">          
             <Link className="post3"to={`/profiles/${post.postAuthor}`}>
-                  {post.postAuthor} <br />
-              <span className="post4">{post.createdAt}</span>
-            </Link>            
+                  {post.postAuthor}              
+            </Link>  
+            <p className="postdate">posted on {post.createdAt}</p>          
           </h4>
+        {!post.postPic && ( 
         <div className="post5">
           <p className='post6'>{post.postText}</p>
         </div>
+        )} 
         {post.postPic && (
           <div className="post-pic-container">
             <div className="post-pic">
-              <img src={post.postPic} alt='drawing'></img>
+              <img className="post-pic-image"src={post.postPic} alt='drawing'></img>
             </div>
           </div>
         )}
 
         <Link className='post7'to={`/posts/${post._id}`}>
-            Join the discussion on this post.
+            Comment on this post.
         </Link>
       </div>
       ))}

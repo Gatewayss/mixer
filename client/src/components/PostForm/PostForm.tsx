@@ -101,75 +101,85 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
   
   return (
     <div className="postform-container">
+
       <div className="postform-header">
-      <h3>What's on your mind?</h3>
+        <h3>
+          <span className="mix">Mix</span ><span className="it">it</span>
+          <span className="up">up</span><span className="dash">~</span> 
+          Think Differently. Create Differently. Share.
+        </h3>
       </div>
 
-    {Auth.loggedIn() ? (
-        <>
-      <form className="postform-form"
-       
-        onSubmit={handleFormSubmit}
-      >
-        <div >
-          <textarea
-          className="postform-textarea"
-            name="postText"
-            placeholder="Here's a new post..."
-            value={postText}           
-            onChange={handleChange}
-          ></textarea>
-        </div>      
-        <div className="postform-btn-container">
-        <div className="postform-button">
-          <button  type="submit">
-            Add Post
-          </button>
-        </div>      
-      </div>
-        
-        {error && (
-          <div >
-             {error.message}
+      {Auth.loggedIn() ? (
+      <div className="postform-body"> 
+      {!postPicUrl && (       
+        <form className="postform-form" onSubmit={handleFormSubmit}>
+          <div className="postform-textarea-container">
+            <textarea
+              className="postform-textarea"
+              name="postText"
+              // placeholder="What's on your mind?"
+              value={postText}           
+              onChange={handleChange}
+            ></textarea>
+          </div>      
+          <div className="postform-btn-container">
+            <div className="postform-button">
+              <button className="postform-btn-label" type="submit">Add Post</button>
+            </div>      
           </div>
-        )}
-      </form>
-      {/* <div className="post-pic-container"> */}
-      {!postPicUrl && (
-      <div className="postfile-input">            
-              <input id="postfile"  className="postfile" type="file" onChange= {(e: ChangeEvent<HTMLInputElement>)=> uploadImage(e.currentTarget.files)}></input>
-              <label htmlFor="postfile">Select A Picture or Drawing
-              <p className="postfile-name"></p>
-              </label>
-        </div> 
-        )} 
-        {postPicUrl && (
-            <div className="preview-postpic-container">             
-                        
-                <div className="preview-post-pic">
-                  <img className="preview-postimage" src={postPicUrl} alt="post pic"></img>
-                </div>
-                <div className="postpic-button-container">         
-          <div className="change-postfile-input">            
-            <input id="change-postfile"  className="change-postfile" type="file" onChange= {(e: ChangeEvent<HTMLInputElement>)=> uploadImage(e.target.files)}></input>
-            <label htmlFor="change-postfile">Select Different Picture
-            <p className="postfile-name"></p>
-            </label>
-          </div>         
-        </div>      
-                <div>
-                <button className="post-save-btn"type="button" onClick={uploadUrl}>Save New Picture</button>
-                </div>
+          
+          {error && (
+            <div className="error-message">
+              <div>
+              {error.message}
+              </div>
             </div>
-         )}
-         {/* </div> */}
-      </>
-       ) : (
-        <p>
-          You need to be logged in to share your thoughts. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
-        </p>
-      )} 
+          )}
+        </form>
+      )}
+
+        {!postPicUrl && (
+          <div className="postfile-input">            
+            <input id="postfile"  className="postfile" type="file" onChange= {(e: ChangeEvent<HTMLInputElement>)=> uploadImage(e.currentTarget.files)}></input>
+            <label htmlFor="postfile"> Add Picture
+                <p className="postfile-name"></p>
+            </label>
+          </div> 
+          )} 
+
+          {postPicUrl && (
+          <div className="preview-container">  
+            <div className="preview-postpic-container">           
+              <div className="preview-post-pic">
+                <img className="preview-postimage" src={postPicUrl} alt="post pic"></img>
+              </div>
+            </div>
+              <div className="postpic-button-container">         
+                <div className="change-postfile-input">            
+                  <input id="change-postfile"  className="change-postfile" type="file" onChange= {(e: ChangeEvent<HTMLInputElement>)=> uploadImage(e.target.files)}></input>
+                  <label htmlFor="change-postfile">Select Different Picture
+                    <p className="postfile-name"></p>
+                  </label>
+                </div>         
+                 
+                <div className="postsave-button container">
+                  <button className="post-save-btn"type="button" onClick={uploadUrl}>Post Picture</button>
+                </div>
+              </div>   
+            
+          </div> 
+          )}
+        
+      </div>
+       ) : null
+      //  (
+      //   <p>
+      //     You need to be logged in to share your thoughts. Please{' '}
+      //     <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+      //   </p>
+      // )
+      } 
     </div>
   );
 };
