@@ -19,7 +19,13 @@ const Home = () => {
         <div className="home-header-container">
           <Header />  
         </div>      
-        
+        <div className="home-postform-header">
+        <h2>
+          <span className="mix">Mix</span ><span className="it">it</span>
+          <span className="up">up</span><span className="dash">~</span> 
+          Think Differently. Create Differently. Share.
+        </h2>
+      </div>
         <div className="home-postform-container">
           <PostForm />
         </div>
