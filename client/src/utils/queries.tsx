@@ -60,3 +60,12 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+export const QUERY_CHALLENGE = gql`
+query challenge {
+  challenge {
+    challengeTitle
+    challengeDescription
+  }
+}
+`
