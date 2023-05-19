@@ -4,6 +4,7 @@ import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
 import Header from '../../components/Header/Header';
+import PictureUpload from '../../components/PictureUpload/PictureUpload';
 import PostForm from '../../components/PostForm/PostForm';
 import PostList from '../../components/PostList/PostList';
 
@@ -39,8 +40,7 @@ const Profile = () => {
       <div>
         <Header/>  
       <h4>
-        You need to be logged in to see this. Use the navigation links above to
-        sign up or log in!
+        You need to be logged in to see this. 
       </h4>
       </div>
     );
@@ -51,17 +51,18 @@ const Profile = () => {
         <div className="profile-header-container">
           <Header /> 
         </div>
-         
-        <div className="pic-link">
+        <div className="profile-pics-container">
+        <div className="me-pic">
           {!userParam && (
-            <Link className="pic-container" to="/picture/me">
-            <div className="profile-pic">
-                <img className="image" src={user.profilePic} alt="user pic"></img>
-              </div>
-            </Link>
+            // <Link className="pic-container" to="/picture/me">
+            // <div className="profile-pic">
+            //     <img className="image" src={user.profilePic} alt="user pic"></img>
+            //   </div>
+            // </Link>
+            <PictureUpload />
           )} 
         </div>
-        <div className="pic-link">
+        <div className="user-pic">
             {userParam && (
               <div className="pic-container" >
                 <div className="profile-pic">
@@ -70,6 +71,7 @@ const Profile = () => {
               </div>
             )}
         </div>
+        </div> 
       <div className="profile-post-container">
 
         <div className="profile-name">

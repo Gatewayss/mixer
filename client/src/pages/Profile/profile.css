@@ -13,6 +13,14 @@
     flex-direction: column;
     width: 100%;
 }
+
+.profile-pics-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;   
+    /* border: solid red; */
+    /* height: 400px; */
+}
 .pic-container {
     display: flex;
     align-items: center; 
@@ -25,7 +33,7 @@
     
 }
 
-.pic-link {
+.me-pic, .user-pic {
     display: flex;
     justify-content: center;
 }
