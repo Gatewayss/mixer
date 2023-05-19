@@ -1,0 +1,22 @@
+[ 
+    {
+        "challengeTitle": "Cars",
+        "challengeDescription": "Like the movie cars where they go fast"
+    }, 
+    {
+        "challengeTitle": "Flowers", 
+        "challengeDescription": "Description a bouqet of flowers in a vase"
+    }, 
+    {
+        "challengeTitle": "Soda", 
+        "challengeDescription": "A crushed up soda can on the ground."
+    },
+    {
+        "challengeTitle": "Dogs", 
+        "challengeDescription": "Small dogs, big owners."
+    },
+    {
+        "challengeTitle": "Box", 
+        "challengeDescription": "Moving boxes with stuff in them."
+    }
+]
