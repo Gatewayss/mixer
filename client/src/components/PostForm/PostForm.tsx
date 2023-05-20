@@ -100,9 +100,7 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
     }
   
   return (
-    <div className="postform-container">
-
-  
+    <div className="postform-container"> 
 
       {Auth.loggedIn() ? (
       <div className="postform-body"> 
@@ -165,12 +163,6 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
         
       </div>
        ) : null
-      //  (
-      //   <p>
-      //     You need to be logged in to share your thoughts. Please{' '}
-      //     <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
-      //   </p>
-      // )
       } 
     </div>
   );

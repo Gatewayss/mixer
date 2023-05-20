@@ -41,53 +41,6 @@ const Login = (props: any) => {
   };
 
   return (
-    // <main >
-    //   <div className="login-page" >
-    //     <div >
-    //       <h4 >Login</h4>
-    //       <div >
-    //         {data ? (
-    //           <p>
-    //             Success! You may now head{' '}
-    //             <Link to="/">back to the homepage.</Link>
-    //           </p>
-    //         ) : (
-    //           <form onSubmit={handleFormSubmit}>
-    //             <input
-    //               className="form-input"
-    //               placeholder="Your email"
-    //               name="email"
-    //               type="email"
-    //               value={formState.email}
-    //               onChange={handleChange}
-    //             />
-    //             <input
-    //               className="form-input"
-    //               placeholder="******"
-    //               name="password"
-    //               type="password"
-    //               value={formState.password}
-    //               onChange={handleChange}
-    //             />
-    //             <button
-                 
-    //               style={{ cursor: 'pointer' }}
-    //               type="submit"
-    //             >
-    //               Submit
-    //             </button>
-    //           </form>
-    //         )}
-
-    //         {error && (
-    //           <div >
-    //             {error.message}
-    //           </div>
-    //         )}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </main>
     <div className="login-container">
     <div className="login-card">
       <div className="login-left">
@@ -131,7 +84,7 @@ const Login = (props: any) => {
             </button>
           </form>    
           {error && (
-            <div className="my-3 p-3 bg-danger text-white">
+            <div>
               {error.message}
             </div>
           )}         
