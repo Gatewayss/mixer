@@ -38,113 +38,126 @@ const Menu = ({ setLineColor, setLineWidth, canvasRef, saveCanvasImage, deleteCa
 
 	return (
 		<div className="Menu">
-		  <div className="color-container">
 			<label>Brush Color </label>
 			<input
-			  type="color"
-			  onChange={(e) => {
-				setLineColor(e.target.value);
-			  }}
+				type="color"
+				onChange={(e) => {
+					setLineColor(e.target.value);
+				}}
 			/>
 			<button
-			  className="rbg-buttons"
-			  style={{ backgroundColor: '#FF0000' }}
-			  onClick={() => {
-				setLineColor('#FF0000');
-			  }}
-			></button>
+				className="rbg-buttons"
+				style={{ backgroundColor: '#FF0000' }}
+				onClick={() => {
+					setLineColor('#FF0000');
+				}}></button>
 			<button
-			  className="rbg-buttons"
-			  style={{ backgroundColor: '#FF7F00' }}
-			  onClick={() => {
-				setLineColor('#FF7F00');
-			  }}
-			></button>
+				className="rbg-buttons"
+				style={{ backgroundColor: '#FF7F00' }}
+				onClick={() => {
+					setLineColor('#FF7F00');
+				}}></button>
 			<button
-			  className="rbg-buttons"
-			  style={{ backgroundColor: '#FFFF00' }}
-			  onClick={() => {
-				setLineColor('#FFFF00');
-			  }}
-			></button>
+				className="rbg-buttons"
+				style={{ backgroundColor: '#FFFF00' }}
+				onClick={() => {
+					setLineColor('#FFFF00');
+				}}></button>
 			<button
-			  className="rbg-buttons"
-			  style={{ backgroundColor: '#00FF00' }}
-			  onClick={() => {
-				setLineColor('#00FF00');
-			  }}
-			></button>
+				className="rbg-buttons"
+				style={{ backgroundColor: '#00FF00' }}
+				onClick={() => {
+					setLineColor('#00FF00');
+				}}></button>
 			<button
-			  className="rbg-buttons"
-			  style={{ backgroundColor: '#0000FF' }}
-			  onClick={() => {
-				setLineColor('#0000FF');
-			  }}
-			></button>
+				className="rbg-buttons"
+				style={{ backgroundColor: '#0000FF' }}
+				onClick={() => {
+					setLineColor('#0000FF');
+				}}></button>
 			<button
-			  className="rbg-buttons"
-			  style={{ backgroundColor: '#4B0082' }}
-			  onClick={() => {
-				setLineColor('#4B0082');
-			  }}
-			></button>
-		  </div>
-	  
-		  <div className="button-container">
+				className="rbg-buttons"
+				style={{ backgroundColor: '#4B0082' }}
+				onClick={() => {
+					setLineColor('#4B0082');
+				}}></button>
+
 			<label>Brush Width </label>
 			<input
-			  type="range"
-			  min="3"
-			  max="20"
-			  onChange={(e) => {
-				setLineWidth(e.target.value);
-			  }}
+				type="range"
+				min="3"
+				max="20"
+				onChange={(e) => {
+					setLineWidth(e.target.value);
+				}}
 			/>
-	  
 			<button
-			  onClick={() => {
-				setBrushShape('square');
-			  }}
-			>
-			  square
-			</button>
+				onClick={() => {
+					setBrushShape('square');
+				}}
+			>square</button>
 			<button
-			  onClick={() => {
-				setBrushShape('round');
-			  }}
-			>
-			  round
-			</button>
-	  
+				onClick={() => {
+					setBrushShape('round');
+				}}
+			>round</button>
+
 			<button
-			  onClick={() => {
-				setLineColor('#FFFFFF');
-			  }}
+				onClick={() => {
+					setLineColor('#FFFFFF');
+				}}
+				>Erase</button>
+				
+			<button type="button"
+				onClick={saveCanvasImage}>Save
+			</button>
+
+			<button type="button"
+				onClick={deleteCanvasImage}>Clear
+			</button>
+
+			<button
+				type="button"
+				onClick={openDialog}
 			>
-			  Erase
+				Download
 			</button>
-	  
-			<button type="button" onClick={saveCanvasImage}>
-			  Save
-			</button>
-	  
-			<button type="button" onClick={deleteCanvasImage}>
-			  Clear
-			</button>
-	  
-			<button type="button" onClick={openDialog}>
-			  Download
-			</button>
-		  </div>
-	  
-		  <dialog id="download-modal">
-			<div className="modal-header">
-			  <h5 className="modal-title">File Name:</h5>
-			</div>
-			{/* Rest of the dialog content */}
-		  </dialog>
+
+			<dialog id="download-modal">
+				<div className="modal-header">
+					<h5 className="modal-title">
+						File Name:
+					</h5>
+				</div>
+				<div className="modal-body">
+					<form>
+						<div>
+							<input
+								type="text"
+								id="file-name"
+								placeholder="Enter file name"
+							/>
+						</div>
+					</form>
+				</div>
+				<div className="modal-footer">
+					<button
+						type="button"
+						onClick={closeDialog}
+					>
+						Close
+					</button>
+					<button
+						id="download-btn"
+						type="button"
+						onClick={downloadFile}
+					>
+						Download
+					</button>
+				</div>
+			</dialog>
 		</div>
-	  );
-			};	  
+	);
+};
 
 export default Menu;

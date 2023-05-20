@@ -143,6 +143,7 @@ function Canvas() {
           height={`720px`}
         />
       </div>
+
     </div>
   );
 }
