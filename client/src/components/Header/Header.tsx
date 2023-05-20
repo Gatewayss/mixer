@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaintbrushPencil } from '@fortawesome/pro-regular-svg-icons'
 import { Link } from 'react-router-dom';
 import "./header.css"
-import Navbar from '../../components/Navbar/Navbar';
 
 import Auth from '../../utils/auth';
 import { QUERY_USER, QUERY_ME } from '../../utils/queries';
@@ -32,9 +31,7 @@ const Header = () => {
             </h1>
         </Link> 
       </div>      
-      <div className="header-navbar">
-       <Navbar />
-      </div> 
+      
       <div className="header-profile-info">
           {Auth.loggedIn() ? (
           <>

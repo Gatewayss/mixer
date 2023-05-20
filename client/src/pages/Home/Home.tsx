@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
 import { useQuery } from '@apollo/client';
-
+import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 import PostForm from '../../components/PostForm/PostForm';
 import PostList from '../../components/PostList/PostList';
@@ -18,7 +18,10 @@ const Home = () => {
       <div className="home-container">
         <div className="home-header-container">
           <Header />  
-        </div>      
+        </div>  
+        <div className="header-navbar">
+       <Navbar />
+      </div>     
         <div className="home-postform-header">
         <h2>
           <span className="mix">Mix</span ><span className="it">it</span>

@@ -8,8 +8,11 @@
   background-color: white;
   padding: 20px;
   background-color:  rgb(207, 162, 222);   
-  border-bottom: solid lightgray;
-    
+  border-bottom: solid 3px black;
+  background-image: url('../../assets/rainbow.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .home-link {

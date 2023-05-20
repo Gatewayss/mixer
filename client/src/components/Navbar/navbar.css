@@ -1,25 +1,33 @@
 .navbar-container {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
     justify-content: space-evenly;
-    align-items:center;   
-    width: 100%;   
+    align-items: center;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
-.navbar-canvas, .navbar-challenge, .navbar-logout {
-    display: flex;  
+.navbar-container.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* Example: Fade to 80% opacity white */
+}
+
+.navbar-canvas,
+.navbar-challenge,
+.navbar-logout {
+    display: flex;
     width: 150px;
     height: 50px;
     border-radius: 25px;
-    background: linear-gradient(40deg, #ff6ec4, #7873f5);
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    background: white;
+    box-shadow: 3px 6px #000634;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    border: 2px solid black;
+    color: #000000;
     font-weight: bold;
     cursor: pointer;
-    transition: transform .2s ease-out;
+    transition: transform 0.2s ease-out;
     text-decoration: none;
     margin: 0 5px;
 }
@@ -27,9 +35,37 @@
 .navbar-logout-label {
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 768px) {
+    .navbar-canvas,
+    .navbar-challenge,
+    .navbar-logout {
+        width: 100px;
+    }
+}
+
+/* Bouncy hover effect */
+.navbar-canvas:hover,
+.navbar-challenge:hover,
+.navbar-logout:hover {
+    animation: bounce 0.6s ease infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 
 @media only screen and (max-width: 768px) {
