@@ -1,179 +1,70 @@
 .postform-container {   
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       /* border-bottom: solid lightgray; */
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-       align-items: center;
-       height:fit-content; 
-       /* position: fixed;  */
-     
-       
-       
-   }
-   
-   
-
-   .postform-body {
-    display: flex;
-
-    /* border: solid yellow; */
-   }
-   
-   .postform-form {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 100%;    
-       /* border: solid green; */
-        
-   }
-/* .postform-textarea-container {
-  border: solid blue;
-} */
-     
-   .postform-textarea {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 400px;   
-       /* border: solid red;     */
-   }
-
-   .postform-btn-container {
-       display: flex;     
-       align-items: center;
-      
-      width: 400px;
-      margin: 10px;
-      /* border: solid orange; */
-   }
-     
-   .postform-button {
-       /* display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 100%;        */
-       display: flex;
-       text-align: center;
-       position: relative;
-   margin-left: 30px;
-       width: 150px;
-       height: 50px;
-       border-radius: 25px;
-       background: lightgray;
-       box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       color: darkgray;
-       font-weight: bold;
-       cursor: pointer;
-       transition: transform .2s ease-out;
-   }
-
-   .postform-btn-label {
-    border: none;
-    background: lightgray;
-    color: darkgray;
-    font-weight: bold;
-   }
-      
-   /* .postpic-button {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 100%;       
-   } */
-
-   /* picture upload */
-
-   /* .post-pic-container {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 400px;
-    border: solid purple;
-   } */
-.preview-container {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  /* border: solid black; */
+  align-items: center;
+  height:fit-content;       
+}
+   
+.postform-body {
   display: flex;
 }
-   .preview-postpic-container {
-    /* height: 100%;
-    width: 100%;    */
-    display: flex;    
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0px;
-    /* border: solid red; */
-    
    
+.postform-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;     
+}
+     
+.postform-textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;         
 }
 
-/* .preview-header{
-  margin-top: 25px;
-} */
-.preview-post-pic{
-  
-    display: flex;
-    flex-wrap: wrap;
-   /* margin: 20px; */
-   margin-top: 0px; 
-   margin-bottom: 0px;
-    border: solid 8px lightgray;      
-    width: 100px; 
-    height: 100px; 
-    overflow: hidden; 
-    /* border-radius: 50%;     */
-   /* background-image: url('https://res.cloudinary.com/dkm1hkwdl/image/upload/v1683982719/vecteezy_vector-icon-concept-of-avatar-user-account-for-social-media_22159714_copy_lmyp0m.jpg'); */
-    background-size: 200px;
-    background-position: 45%;  
+.postform-btn-container {
+  display: flex;     
+  align-items: center;      
+  width: 400px;
+  margin: 10px;      
 }
+     
+.postform-button {    
+  display: flex;
+  text-align: center;
+  position: relative;
+  margin-left: 30px;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background: lightgray;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkgray;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+  }
 
-.preview-postimage{
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-
-
-   /* margin-left: -24px; 
-    margin-top: -5px;  */
-   }
-
-
-
-
-   .postpic-button-container, .postsave-button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0px;
-    /* border: solid green;     */
-   }
- .change-postfile, .postfile {
-  opacity: 0;
-  width: 0.1px;
-  height: 0.1px;
-  position: absolute;
+.postform-btn-label {
+  border: none;
+  background: lightgray;
+  color: darkgray;
+  font-weight: bold;
 }
 
 .postfile-input {
   display: flex;
   flex-direction: column-reverse;
   margin-top: 53px;
-  margin-left: -190px;
-  /* border: solid purple; */
+  margin-left: -190px;  
 }
 
-/* .change-postfile-input {
-  display: flex;
-  flex-direction: column-reverse;
-
-
-} */
 .postfile-input label {
   display: flex;
   text-align: center;
@@ -191,6 +82,59 @@
   font-weight: bold;
   cursor: pointer;
   transition: transform .2s ease-out;
+}
+
+.postfile-name {
+  position: absolute;
+  bottom: -35px;
+  left: 10px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.change-postfile, .postfile {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+   
+.preview-container {
+  width: 100%;  
+  display: flex;
+}
+.preview-postpic-container {
+  display: flex;    
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;   
+}
+
+
+.preview-post-pic{  
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px; 
+  margin-bottom: 0px;
+  border: solid 8px lightgray;      
+  width: 100px; 
+  height: 100px; 
+  overflow: hidden;    
+  background-size: 200px;
+  background-position: 45%;  
+}
+
+.preview-postimage{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+.postpic-button-container, .postsave-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
 }
 
 .change-postfile-input label {
@@ -249,20 +193,8 @@ button:focus + label {
   outline: -webkit-focus-ring-color auto 2px;
 }
 
-.postfile-name {
-    position: absolute;
-    bottom: -35px;
-    left: 10px;
-    font-size: 0.85rem;
-    color: #555;
-  }
-
 .error-message {
-
-/* border: solid black; */
  margin-bottom: -100px;
  margin-right: -300px;
- color: red;
- 
-
+ color: red; 
 }

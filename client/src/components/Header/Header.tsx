@@ -14,20 +14,12 @@ import {  useParams } from 'react-router-dom';
 
 
 const Header = () => {
-  // const { username: userParam }: any = useParams();
 
-  const { loading, data } = useQuery(QUERY_ME
-  //   , {
-  //   variables: { username: userParam },
-  // }
-  );
-   const user = data?.me || 
-  //  data?.user 
-  //  || 
-   {};
+  const { loading, data } = useQuery(QUERY_ME);
+   const user = data?.me || {};
   
   
-    return (     
+  return (     
     <header className="header-container">
       <div>       
         <Link className="home-link" to="/">

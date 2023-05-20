@@ -1,179 +1,165 @@
 .upload-pic-container {
     max-height: 100%;
     max-width: 100%;
-      display: flex;
-      flex-direction: column;
-    
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
      
   }
   
   .upload-profile-pic{
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 50px; 
-      margin-bottom: 0px;
-      border: solid 8px lightgray;      
-      width: 200px; 
-      height: 200px; 
-      overflow: hidden; 
-      border-radius: 50%;     
-      background-size: 200px;
-      background-position: 45%;  
-      margin-bottom: 10px;
-  
-      
-      
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px; 
+    margin-bottom: 0px;
+    border: solid 8px lightgray;      
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 50%;     
+    background-size: 200px;
+    background-position: 45%;  
+    margin-bottom: 10px; 
   }
   
-  .upload-image{
-      width: 100%; 
-      height: 100%; 
-      object-fit: cover;
-    
-     
-      /*margin-left: -24px; 
-      margin-top: -5px;  */
-     }
+.upload-image{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;    
+}
   
-     .preview-pic-container {
-      max-height: 100%;
-      max-width: 100%;   
-      display: flex;    
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0px;
-      
-     
-  }
+.preview-pic-container {
+  max-height: 100%;
+  max-width: 100%;   
+  display: flex;    
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;     
+}
   
-  .preview-header{
-    margin-top: 25px;
-  }
-  .preview-profile-pic{
-    
-      display: flex;
-      flex-wrap: wrap;
-     /* margin: 20px; */
-     margin-top: 50px; 
-     margin-bottom: 0px;
-      border: solid 8px lightgray;      
-      width: 200px; 
-      height: 200px; 
-      overflow: hidden; 
-      border-radius: 50%;    
-     background-image: url('https://res.cloudinary.com/dkm1hkwdl/image/upload/v1683982719/vecteezy_vector-icon-concept-of-avatar-user-account-for-social-media_22159714_copy_lmyp0m.jpg');
-      background-size: 200px;
-      background-position: 45%;  
-  }
+.preview-header{
+  margin-top: 25px;
+}
+.preview-profile-pic{
   
-  .preview-image{
-      width: 100%; 
-      height: 100%; 
-      object-fit: cover;
+  display: flex;
+  flex-wrap: wrap;
+  
+    margin-top: 50px; 
+    margin-bottom: 0px;
+    border: solid 8px lightgray;      
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 50%;    
+    background-image: url('https://res.cloudinary.com/dkm1hkwdl/image/upload/v1683982719/vecteezy_vector-icon-concept-of-avatar-user-account-for-social-media_22159714_copy_lmyp0m.jpg');
+    background-size: 200px;
+    background-position: 45%;  
+}
+
+.preview-image{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+  
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+}
+.change-file, .file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+  
+.file-input label {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  background: lightgray;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkgray;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+}
+  
+.change-file-input label {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  width: 215px;
+  height: 50px;
+  border-radius: 25px;
+  background: lightgray;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkgray;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+}
+
+.file-name {
+  position: absolute;
+  bottom: -35px;
+  left: 10px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.save-btn {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+}
+  
+input:hover + label,
+input:focus + label {
+  transform: scale(1.02);
+}
+
+input:focus + label {
+  outline: 1px solid #000;
+  outline: -webkit-focus-ring-color auto 2px;
+}
+
+button:hover + label,
+button:focus + label {
+  transform: scale(1.02);
+}
+
+button:focus + label {
+  outline: 1px solid #000;
+  outline: -webkit-focus-ring-color auto 2px;
+}
 
 
-     /* margin-left: -24px; 
-      margin-top: -5px;  */
-     }
-  
-     .button-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 0px;
-      
-     }
-   .change-file, .file {
-    opacity: 0;
-    width: 0.1px;
-    height: 0.1px;
-    position: absolute;
-  }
-  
-  .file-input label {
-    display: block;
-    position: relative;
-    margin-bottom: 30px;
-    width: 250px;
-    height: 50px;
-    border-radius: 25px;
-    background: lightgray;
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: darkgray;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform .2s ease-out;
-  }
-  
-  .change-file-input label {
-    display: block;
-    position: relative;
-    margin-bottom: 30px;
-    width: 215px;
-    height: 50px;
-    border-radius: 25px;
-    background: lightgray;
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: darkgray;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform .2s ease-out;
-  }
-  
-  .save-btn {
-    display: block;
-    position: relative;
-    width: 250px;
-    height: 50px;
-    border-radius: 25px;
-    background: linear-gradient(40deg, #ff6ec4, #7873f5);
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform .2s ease-out;
-  }
-  
-  input:hover + label,
-  input:focus + label {
-    transform: scale(1.02);
-  }
-  
-  input:focus + label {
-    outline: 1px solid #000;
-    outline: -webkit-focus-ring-color auto 2px;
-  }
-  
-  button:hover + label,
-  button:focus + label {
-    transform: scale(1.02);
-  }
-  
-  button:focus + label {
-    outline: 1px solid #000;
-    outline: -webkit-focus-ring-color auto 2px;
-  }
-  
-  .file-name {
-      position: absolute;
-      bottom: -35px;
-      left: 10px;
-      font-size: 0.85rem;
-      color: #555;
-    }
-  
-  
-  
+
+

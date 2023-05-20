@@ -1,11 +1,8 @@
 .profile-container {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    flex-direction: column;
-    /* justify-content: center;    */
-   
-    width: 100%;
-    /* text-align: center; */
+    flex-direction: column;    
+    width: 100%;   
 }
 
 .profile-header-container {
@@ -17,10 +14,14 @@
 .profile-pics-container {
    display: flex;
    flex-direction: column;
-   justify-content: center;   
-    /* border: solid red; */
-    /* height: 400px; */
+   justify-content: center;      
 }
+
+.me-pic, .user-pic {
+    display: flex;
+    justify-content: center;
+}
+
 .pic-container {
     display: flex;
     align-items: center; 
@@ -28,14 +29,7 @@
     width: 300px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* border: solid black; */
-    
-}
-
-.me-pic, .user-pic {
-    display: flex;
-    justify-content: center;
+    align-items: center;      
 }
 
 .profile-pic{
@@ -46,38 +40,36 @@
     width: 200px; 
     height: 200px; 
     overflow: hidden; 
-    border-radius: 50%;    
-    /* background-image: url('https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684264594/blank-profile-picture-gc25a26fa6_1280_copy_ve1thb.jpg'); */
+    border-radius: 50%;      
     background-size: 200px;
     background-position: 45%;
-
 }
 
 .image{
     width: 100%; 
     height: 100%; 
     object-fit: cover;  
-   }
+}
 
-   .profile-name {
-    text-align: center;
-   }
-
-   .profile-postform-container {
+.profile-post-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* border: solid yellow; */
-   }
+}
 
-   .profile-postlist-container {
+.profile-name {
+    text-align: center;
+}
+
+.profile-postform-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+}
+
+.profile-postlist-container {
     width: 100%;
     display: flex; 
     flex-direction: column;
-   }
+}
 
-   .profile-post-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-   }

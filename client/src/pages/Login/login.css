@@ -5,8 +5,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;    
-    /* padding: 20px;    */
+    height: 100vh;      
     background-color: rgb(90, 90, 145);   
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -16,13 +15,11 @@
     justify-content: space-between;
     align-items: center;
     width: 85%;
-    max-width: 1000px;
-    /* min-width: 600px; */
+    max-width: 1000px;   
     min-height: 450px;  
     margin: 10px;
     background-color: white;  
-    border-radius: 10px;
-   
+    border-radius: 10px;   
   }
   
   .login-left {
@@ -32,13 +29,11 @@
     justify-content: center;
     text-align: center;
     color: white;
-    width: 70%;
-    /* min-width: 450px; */
+    width: 70%;   
     height: 600px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    background-color: rgb(47, 47, 118);  
-    /* padding: 5px;  */
+    background-color: rgb(47, 47, 118);      
   }
   
   .logo-header{
@@ -84,25 +79,20 @@
     align-items: center;
     justify-content: center;
     color: white;   
-    width: 30%; 
-   
-    height: 600px;  
-   
+    width: 30%;    
+    height: 600px;     
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: white;    
-    
+    background-color: white;        
   }
   
   .login-right-container {
    display: flex;
-   flex-direction: column;
-   /*flex-wrap: wrap;*/
+   flex-direction: column;  
    align-items: center;
    justify-content: center;
    height: 100%;
-   width: 95%;   
-  /* border: solid green;*/
+   width: 95%;    
    padding: 5px; 
   }
   
@@ -114,9 +104,7 @@
    justify-content:flex-end;
    height: 50%;  
    margin: 0px;
-   background-color: white;   
-   /*border: solid red; */
-  
+   background-color: white;      
   }
   
   .login-input{   
@@ -143,31 +131,24 @@
    justify-content:flex-end;
    margin: 0px;
    height: 20%;  
-   color: black;   
-  /* border: solid blue;     */
+   color: black;     
    }
   
    .no-acct-tag {
-     font-size: medium;  
-    /* border: solid green; */ 
-    
+     font-size: medium;      
     }
   
-    .signup-link {
-  
+    .signup-link {  
       border-radius: 50px;   
       width: 75%;
       padding: 5px;
       margin: 3px;
       background-color: rgb(170, 0, 255);
-      border: solid 1px black;
-     
+      border: solid 1px black;   
     }
    
    .go-signup-btn{
-      border-radius: 50px;
-      /*padding: 5px;
-      margin: 3px;*/
+      border-radius: 50px;      
       width: 100%;
       background-color: rgb(170, 0, 255);
       color: white;
@@ -176,15 +157,13 @@
   
     @media only screen and (max-width: 992px) {
       .login-card {
-         width: 100%;
-         margin: 0px;
-        
+         width: 95%;        
       }
     }
+
     @media only screen and (max-width: 768px) {
       .login-card {
-         flex-direction: column;
-       
+         flex-direction: column;       
       }
   
       .login-left {
@@ -235,14 +214,4 @@
          margin-bottom: 3px;
         }
   }
-/*   
-   @media only screen and (max-width: 600px) {
-    .login-card {
-     /* width: 100%; */
-     /* margin: 0;
-    }
-    .logo-header {
-      font-size: 100px;
-    } */
-   
-    /* }  */ 
+

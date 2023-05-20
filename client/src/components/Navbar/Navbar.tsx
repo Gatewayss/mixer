@@ -1,5 +1,5 @@
 import React, { MouseEvent } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import "./navbar.css"
 
 import Auth from '../../utils/auth';
@@ -21,6 +21,7 @@ const Navbar = () => {
   const logout = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     Auth.logout();
+    <Navigate to="/login"/>
   };
  
   return (

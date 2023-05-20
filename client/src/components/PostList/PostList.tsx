@@ -24,16 +24,16 @@ const PostList:FunctionComponent<PostProps> = ( {posts
     <div className="postlist-container">  
       {posts &&
         posts.map((post: Post ) => (
-        <div className="post1"key={post._id} >
-          <h4 className="post2">          
-            <Link className="post3"to={`/profiles/${post.postAuthor}`}>
+        <div className="post-container"key={post._id} >
+          <h4>          
+            <Link to={`/profiles/${post.postAuthor}`}>
                   {post.postAuthor}              
             </Link>  
             <p className="postdate">posted on {post.createdAt}</p>          
           </h4>
         {!post.postPic && ( 
-        <div className="post5">
-          <p className='post6'>{post.postText}</p>
+        <div className="post-text-container">
+          <p>{post.postText}</p>
         </div>
         )} 
         {post.postPic && (
@@ -44,7 +44,7 @@ const PostList:FunctionComponent<PostProps> = ( {posts
           </div>
         )}
 
-        <Link className='post7'to={`/posts/${post._id}`}>
+        <Link to={`/posts/${post._id}`}>
             Comment on this post.
         </Link>
       </div>

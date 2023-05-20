@@ -9,7 +9,6 @@ import PostForm from '../../components/PostForm/PostForm';
 import PostList from '../../components/PostList/PostList';
 
 import { QUERY_USER, QUERY_ME } from '../../utils/queries';
-import { Link } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
 
@@ -53,12 +52,7 @@ const Profile = () => {
         </div>
         <div className="profile-pics-container">
         <div className="me-pic">
-          {!userParam && (
-            // <Link className="pic-container" to="/picture/me">
-            // <div className="profile-pic">
-            //     <img className="image" src={user.profilePic} alt="user pic"></img>
-            //   </div>
-            // </Link>
+          {!userParam && (        
             <PictureUpload />
           )} 
         </div>

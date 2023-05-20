@@ -42,61 +42,6 @@ const Signup = () => {
   };
 
   return (
-    // <main >
-    //   <div >
-    //     <div >
-    //       <h4 >Sign Up</h4>
-    //       <div >
-    //         {data ? (
-    //           <p>
-    //             Success! You may now head{' '}
-    //             <Link to="/">back to the homepage.</Link>
-    //           </p>
-    //         ) : (
-    //           <form onSubmit={handleFormSubmit}>
-    //             <input
-    //               className="form-input"
-    //               placeholder="Your username"
-    //               name="username"
-    //               type="text"
-    //               value={formState.username}
-    //               onChange={handleChange}
-    //             />
-    //             <input
-    //               className="form-input"
-    //               placeholder="Your email"
-    //               name="email"
-    //               type="email"
-    //               value={formState.email}
-    //               onChange={handleChange}
-    //             />
-    //             <input
-    //               className="form-input"
-    //               placeholder="******"
-    //               name="password"
-    //               type="password"
-    //               value={formState.password}
-    //               onChange={handleChange}
-    //             />
-    //             <button
-                 
-    //               style={{ cursor: 'pointer' }}
-    //               type="submit"
-    //             >
-    //               Submit
-    //             </button>
-    //           </form>
-    //         )}
-
-    //         {error && (
-    //           <div>
-    //             {error.message}
-    //           </div>
-    //         )}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </main>
     <main className="signup-container">
     <div className="signup-card">
       <div className="signup-left">
@@ -136,7 +81,7 @@ const Signup = () => {
             </button>
           </form>         
           {error && (
-            <div className="my-3 p-3 bg-danger text-white">
+            <div>
               {error.message}
             </div>
           )}

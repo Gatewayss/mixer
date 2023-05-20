@@ -4,18 +4,12 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 100%; 
-   /* border: solid lightgray;  */
-    
-    
+   width: 100%;           
 }
 
-.post1{
-   /* border: solid red; */
+.post-container{
    display: flex;
-   flex-direction: column;
-   /* padding: 10px;
-   margin: 0 50px; */
+   flex-direction: column; 
    width: 600px;
    padding: 20px;
    background-color: lightgray;
@@ -23,38 +17,14 @@
    margin-bottom: 8px;
 }
 
-/* .post2{
-   border: solid yellow;
-}
-
-
-.post3{
-   border: solid blue;
-} */
-
-
-/* .post4{
-   border: solid green;
-} */
-
-.post5{
-   /* border: solid lightgray; */
+.post-text-container{ 
    padding: 5px;
    background-color: white;
 }
 
-/* .post6{
-   border: solid purple;
-}
-
-.post7{
-   border: solid black;
-} */
-
 .postdate{
    font-size: small;
    font-style: italic;
-
 }
 
 .post-pic-container {
@@ -62,40 +32,29 @@
    justify-content: center;
    align-items: center;
    height: 100%;
-   width: 100%;   
-  
-
-   
+   width: 100%;       
 }
+
 .post-pic{
    display: flex;
-   flex-wrap: wrap;
-   /*margin: 5px; */
+   flex-wrap: wrap;  
    border: solid 8px lightgray;      
    width: 600px; 
    height: 600px; 
-   overflow: hidden; 
-   /* border-radius: 50%;     */
-  /* background-image: url('https://res.cloudinary.com/dkm1hkwdl/image/upload/v1683982719/vecteezy_vector-icon-concept-of-avatar-user-account-for-social-media_22159714_copy_lmyp0m.jpg');*/
+   overflow: hidden;  
    background-size: 100px;
-   background-position: 45%;
-  
-      
-
+   background-position: 45%;    
 }
 
 .post-pic-image{
    width: 100%; 
    height: 100%; 
    object-fit: cover;
-
-   /*margin-left: -24px; 
-   margin-top: -27px;  */
   }
 
 
  @media only screen and (max-width: 768px) {
-   .post1 {
+   .post-container {
       width: 550px;
    }
 
@@ -107,7 +66,7 @@
 
 
 @media only screen and (max-width: 600px) {
-   .post1 {
+   .post-container {
       width: 425px;
    }
 
