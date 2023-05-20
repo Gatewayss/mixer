@@ -119,8 +119,8 @@ function Canvas() {
           <span>Auto-saving...</span>
         </div>
       )}
-      <div className="draw-area">
-        <Menu
+      <div>
+      <Menu
           setLineColor={setLineColor}
           setLineWidth={setLineWidth}
           deleteCanvasImage={deleteCanvasImage}
@@ -129,6 +129,9 @@ function Canvas() {
           setBrushShape={setBrushShape}
           saveCanvasImage={saveCanvasImage}
         />
+      </div>
+      <div className="draw-area">
+     
 
         <canvas
           id="Mcanvas"

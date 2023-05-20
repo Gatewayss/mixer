@@ -9,7 +9,11 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 background-image: linear-gradient(
-	120deg, #fdfbfb 0%, #ebedee 100%);
+120deg, #fdfbfb 0%, #ebedee 100%);
+background-image: url('../../assets/Indieground_Holographic_Textures_03.jpg');
+background-position: top center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 /* h1 {
@@ -19,10 +23,13 @@ color: #4644f0;
 } */
 
 .draw-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 width: 1280px;
 height: 720px;
-border: 2px solid #808080;
-position: relative;
+border: 3px solid black;
+  border-radius: 20px;
 background-color: white;
 }
 
@@ -30,10 +37,14 @@ background-color: white;
 width: 650px;
 height: 50px;
 display: flex;
-justify-content: space-evenly;
+flex-direction: row;
+justify-content: space-around;
 border-radius: 5px;
 align-items: center;
-background-color: #a3a3a32d;
+background-color: white;
+
+padding: 20px;
+  border-radius: 20px;
 margin: auto;
 margin-top: 10px;
 }
