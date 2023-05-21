@@ -23,11 +23,11 @@ const Header = () => {
       <div>       
         <Link className="home-link" to="/">
           <h1 className="header-logo">                    
-              <span className="m">m</span>
-              <span className="i">i</span>
+              <span className="m">M</span>
+              <span className="i">I</span>
               <span className="header-icon"><FontAwesomeIcon icon={faPaintbrushPencil} flip="vertical" /></span>
-              <span className="e">e</span>
-              <span className="r">r</span>                   
+              <span className="e">E</span>
+              <span className="r">R</span>                   
             </h1>
         </Link> 
       </div>      

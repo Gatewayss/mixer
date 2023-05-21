@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './home.css';
 import { useQuery } from '@apollo/client';
 import Navbar from '../../components/Navbar/Navbar';
@@ -16,6 +17,7 @@ const Home = () => {
   
     return (    
       <div className="home-container">
+        <div className='overlay'></div>
         <div className="home-header-container">
           <Header />  
         </div>  

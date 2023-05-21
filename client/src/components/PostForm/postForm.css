@@ -102,6 +102,7 @@
 .preview-container {
   width: 100%;  
   display: flex;
+  
 }
 .preview-postpic-container {
   display: flex;    
