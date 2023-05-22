@@ -130,8 +130,9 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
               {error.message}
             </div>
           )}
-          <input type="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)} />Challenge of the day
-
+          <div className="challenge">
+          <input type="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)} /> &nbsp;Challenge of the day
+          </div>
         </form>
       )}
 
