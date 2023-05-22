@@ -1,6 +1,12 @@
-import React, {FunctionComponent} from 'react';
+import React, {FunctionComponent, MouseEvent, useState} from 'react';
 import { Link } from 'react-router-dom';
+import { useQuery} from '@apollo/client';
+import { QUERY_SINGLE_POST } from '../../utils/queries';
 import "./postList.css"
+
+import Auth from '../../utils/auth';
+import CommentForm from '../CommentForm/CommentForm';
+import CommentList from '../CommentList/CommentList';
 
 interface Post  {
   _id: string
@@ -16,6 +22,28 @@ type PostProps = {
 
 const PostList:FunctionComponent<PostProps> = ( {posts 
 }) => {
+
+  const [singlePostId, setSinglePostId] = useState('');  
+
+  const { data } =  useQuery( QUERY_SINGLE_POST, {  
+      variables: { 
+        postId: singlePostId,  
+      },
+    }
+  );
+
+  const singlePost = data?.post || {};
+
+  const getPostId = (event: MouseEvent<HTMLButtonElement>) => {
+    const { value }: any  = event.target;   ;
+    setSinglePostId(value);    
+  };
+
+  const closeComments = (event: MouseEvent<HTMLButtonElement>) => {    
+    setSinglePostId("");
+    console.log(singlePostId);
+  };
+
   if (!posts.length) {
     return <h3>No Posts Yet</h3>;
   }
@@ -43,10 +71,25 @@ const PostList:FunctionComponent<PostProps> = ( {posts
             </div>
           </div>
         )}
+      
 
-        <Link to={`/posts/${post._id}`}>
-            Comment on this post.
-        </Link>
+{Auth.loggedIn() ? (
+        <div className="post-footer">       
+          <div className="post-comment-link">                
+          {post._id === singlePost._id ? (
+            <div>           
+              <button type="submit" onClick={closeComments}>Close Comments</button>
+              <CommentForm postId={post._id} />
+              <CommentList comments={singlePost.comments} />     
+            </div>             
+            ) : (           
+              <button  type="submit" value={post._id} onClick= {getPostId}>Comments</button>
+            )}
+            
+          </div>            
+         
+        </div>
+         ) : null }
       </div>
       ))}
     </div>
