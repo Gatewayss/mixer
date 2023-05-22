@@ -78,12 +78,12 @@ const PostList:FunctionComponent<PostProps> = ( {posts
           <div className="post-comment-link">                
           {post._id === singlePost._id ? (
             <div>           
-              <button type="submit" onClick={closeComments}>Close Comments</button>
+              <button className="comment-close-btn"type="submit" onClick={closeComments}>Close Comments</button>
               <CommentForm postId={post._id} />
               <CommentList comments={singlePost.comments} />     
             </div>             
             ) : (           
-              <button  type="submit" value={post._id} onClick= {getPostId}>Comments</button>
+              <button className="post-comment-btn" type="submit" value={post._id} onClick= {getPostId}>Comments</button>
             )}
             
           </div>            

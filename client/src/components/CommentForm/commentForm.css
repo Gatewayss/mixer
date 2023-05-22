@@ -5,4 +5,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: solid red; */
+}
+.comment-form {
+    width: 100%;
+}
+.comment-textarea-container {
+    width: 100%;
+}
+.commentform-textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.commentform-button {
+    border-radius: 10px;
+    border: solid lightgray;
+    background-color: lightgray;
+    margin-top: 2px;
 }

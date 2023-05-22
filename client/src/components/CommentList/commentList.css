@@ -1,11 +1,51 @@
 .commentlist-container {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 450px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    border: solid lightgray;
+    flex-wrap: wrap;
+    /* align-items:center;
+    justify-content:flex-start; */
+    text-align: left;  
+    /* border: solid lightgray; */
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 5px;
+    }
+.commentlist-header {
+    font-size: medium;
    
+
 }
+    /* .comment-container {
+        border: solid green;
+    } */
+
+    .single-comment {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: solid lightgray;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 2px 0;
+    
+        border-radius: 10px;
+    }
+
+    .comment-body {
+        /* border: solid red; */
+        margin: 2px;
+    }
+
+    .comment-header {
+        /* border: solid lightcoral; */
+        margin: 0;
+        padding: 2px;
+        font-style: italic;     
+        background-color: lightgray;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        
+        
+    }
