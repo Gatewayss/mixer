@@ -10,8 +10,11 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate('posts');
     },
-    posts: async (parent, { username }) => {
+    posts: async (parent, { username, isChecked }) => {
       const params = username ? { username } : {};
+      if (isChecked) {
+        params.isChecked = isChecked;
+      }
       return Post.find(params).sort({ createdAt: -1 });
     },
     post: async (parent, { postId }) => {
@@ -52,11 +55,12 @@ const resolvers = {
 
       return { token, user };
     },
-    addPost: async (parent, { postText, postPic }, context) => {
+    addPost: async (parent, { postText, postPic, isChecked }, context) => {
       if (context.user) {
         const post = await Post.create({
           postText,
           postPic,
+          isChecked,
           postAuthor: context.user.username,
         });
 
