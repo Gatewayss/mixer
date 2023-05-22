@@ -15,7 +15,7 @@ const CommentForm = ({ postId }: any) => {
 
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log('this is working');
+    // console.log('this is working');
 
     try {
       const { data } = await addComment({       
@@ -34,7 +34,7 @@ const CommentForm = ({ postId }: any) => {
 
   const handleChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     const { name, value } = event.target;
-    console.log(value.length);
+    console.log(value);
 
     if (name === 'commentText' && value.length <= 280) {
       setCommentText(value);
@@ -44,7 +44,7 @@ const CommentForm = ({ postId }: any) => {
 
   return (
     <div className="commentform-container">
-      <h4>What are your thoughts on this post?</h4>
+      {/* <h4>What are your thoughts on this post?</h4> */}
 
       {Auth.loggedIn() ? (
       <>
@@ -53,7 +53,7 @@ const CommentForm = ({ postId }: any) => {
           characterCount === 280 || error ? 'text-danger' : ''
         }`}
       >
-        Character Count: {characterCount}/280
+        {/* Character Count: {characterCount}/280 */}
         {error && <span className="ml-2">{error.message}</span>}
       </p>
       <form
@@ -80,7 +80,7 @@ const CommentForm = ({ postId }: any) => {
       </>
       ) : (
         <p>
-          You need to be logged in to share your thoughts. Please{' '}
+          You need to be logged in to comment. Please{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
