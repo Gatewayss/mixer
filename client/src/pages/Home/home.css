@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;  
-    background-image: url(../../assets/background.png);
+    background-image: url(../../assets/grid_background.png);
   background-position:  center;
   background-size: cover;
   background-repeat: no-repeat;       
@@ -23,8 +23,10 @@
     justify-content: center;  
     text-align: center;    
     width: 100%;
-    font-size: medium;
+    font-size: xx-large;
     color: rgb(114, 44, 149);     
+  font-family: 'Darumadrop One', cursive;
+
 }
 
 .mix {
@@ -49,9 +51,12 @@
 .home-postform-container {   
     display: flex;
     flex-direction: column;
-    align-items: center;     
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;    
+    align-items: center;   
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding:20px;
+width: 50%;  
+    margin: 1rem auto;
 }
 

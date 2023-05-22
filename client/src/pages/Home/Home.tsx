@@ -17,13 +17,14 @@ const Home = () => {
   
     return (    
       <div className="home-container">
-        <div className='overlay'></div>
+        <div className=''></div>
         <div className="home-header-container">
           <Header />  
         </div>  
         <div className="header-navbar">
        <Navbar />
-      </div>     
+      </div>    
+        <div className='home-design'>
         <div className="home-postform-header">
         <h2>
           <span className="mix">Mix</span ><span className="it">it</span>
@@ -32,7 +33,13 @@ const Home = () => {
         </h2>
       </div>
         <div className="home-postform-container">
+        <h2>
+          <span className="mix">Mix</span ><span className="it">it</span>
+          <span className="up">up</span><span className="dash">~</span> 
+          Think Differently. Create Differently. Share.
+        </h2>
           <PostForm />
+        </div>
         </div>
         <div className="home-postlist-container">
           {loading ? (
