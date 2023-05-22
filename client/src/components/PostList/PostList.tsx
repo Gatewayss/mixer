@@ -1,8 +1,10 @@
 import React, {FunctionComponent, MouseEvent, useState} from 'react';
 import { Link } from 'react-router-dom';
-import { useQuery} from '@apollo/client';
+import { useQuery, useMutation} from '@apollo/client';
 import { QUERY_SINGLE_POST } from '../../utils/queries';
-import "./postList.css"
+import { REMOVE_POST  } from '../../utils/mutations';
+import "./postList.css";
+
 
 import Auth from '../../utils/auth';
 import CommentForm from '../CommentForm/CommentForm';
@@ -25,6 +27,8 @@ const PostList:FunctionComponent<PostProps> = ( {posts
 
   const [singlePostId, setSinglePostId] = useState('');  
 
+  const [removePost, { error }] = useMutation(REMOVE_POST);
+
   const { data } =  useQuery( QUERY_SINGLE_POST, {  
       variables: { 
         postId: singlePostId,  
@@ -33,6 +37,22 @@ const PostList:FunctionComponent<PostProps> = ( {posts
   );
 
   const singlePost = data?.post || {};
+
+  const deletePost =  async (event: MouseEvent<HTMLButtonElement>) => {
+    console.log(event.currentTarget.id);
+
+    try {
+      const { data } = await removePost({
+        variables: {
+          postId: event.currentTarget.id,          
+        },
+      });     
+     
+    } catch (err) {
+      console.error(err);
+    }
+    window.location.reload();
+   };
 
   const getPostId = (event: MouseEvent<HTMLButtonElement>) => {
     const { value }: any  = event.target;   ;
@@ -76,7 +96,7 @@ const PostList:FunctionComponent<PostProps> = ( {posts
 {Auth.loggedIn() ? (
         <div className="post-footer">       
           <div className="post-comment-link">                
-          {post._id === singlePost._id ? (
+            {post._id === singlePost._id ? (
             <div>           
               <button className="comment-close-btn"type="submit" onClick={closeComments}>Close Comments</button>
               <CommentForm postId={post._id} />
@@ -86,8 +106,15 @@ const PostList:FunctionComponent<PostProps> = ( {posts
               <button className="post-comment-btn" type="submit" value={post._id} onClick= {getPostId}>Comments</button>
             )}
             
-          </div>            
-         
+          </div>    
+          <div className="delete-btn-container">     
+          {Auth.loggedIn() && Auth.getProfile().data.username === post.postAuthor? (
+          
+          <button id={post._id} className="delete-btn" type="submit" onClick={deletePost}>Delete Post</button>
+
+          ) : null
+        }   
+         </div>
         </div>
          ) : null }
       </div>
