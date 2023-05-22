@@ -17,6 +17,16 @@ export const QUERY_USER = gql`
   }
 `;
 
+export const QUERY_CHECKED = gql`
+query getPosts($isChecked: Boolean) {
+  posts(isChecked: $isChecked) {
+    postText
+    postAuthor
+    postPic
+    createdAt
+  }
+}`
+
 export const QUERY_POSTS = gql`
   query getPosts {
     posts {
@@ -25,6 +35,7 @@ export const QUERY_POSTS = gql`
       postPic
       postAuthor
       createdAt
+      isChecked
     }
   }
 `;

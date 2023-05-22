@@ -20,6 +20,7 @@ const typeDefs = gql`
     _id: ID
     postText: String
     postPic: String
+    isChecked: String
     postAuthor: String
     createdAt: String    
     comments: [Comment]!
@@ -40,7 +41,7 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    posts(username: String): [Post]
+    posts(username: String, isChecked: Boolean): [Post]
     post(postId: ID!): Post
     me: User
     challenge: [Challenge]
@@ -50,7 +51,7 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addProfilePic(profilePic: String!): User
-    addPost(postText: String, postPic: String): Post
+    addPost(postText: String, postPic: String, isChecked: Boolean!): Post
     addComment(postId: ID!, commentText: String!): Post
     removePost(postId: ID!): Post
     removeComment(postId: ID!, commentId: ID!): Post

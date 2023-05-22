@@ -13,7 +13,8 @@
     },
     {
         "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
-        "postAuthor": "JaneK"
+        "postAuthor": "JaneK",
+        "isChecked:": true
     },
     {
         "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
