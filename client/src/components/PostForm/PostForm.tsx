@@ -11,6 +11,7 @@ import Auth from '../../utils/auth';
 const PostForm = () => {
 const [postText, setPostText] = useState('');
 const [postPicUrl, setPostPicUrl] = useState('');
+const [isChecked, setIsChecked] = useState(false);
 
 const [addPost, { error }] = useMutation(ADD_POST, {   
     update(cache, { data: { addPost } }) {
@@ -45,10 +46,12 @@ const [addPost, { error }] = useMutation(ADD_POST, {
         variables: {
           postText,
           postAuthor: Auth.getProfile().data.username,
+          isChecked: isChecked,
         },
       });
  
       setPostText('');
+      setIsChecked(false); 
     } catch (err) {
       console.error(err);
     }
@@ -70,6 +73,7 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
     const { data } = await addPost({     
       variables: {
         postPic: postPicUrl,
+        isChecked: isChecked,
         thoughtAuthor: Auth.getProfile().data.username,
       },
     });
@@ -126,6 +130,9 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
               {error.message}
             </div>
           )}
+          <div className="challenge">
+          <input type="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)} /> &nbsp;Challenge of the day
+          </div>
         </form>
       )}
 

@@ -35,13 +35,14 @@ export const ADD_PROFILEPIC = gql`
 `;
 
 export const ADD_POST = gql`
-  mutation addPost($postText: String, $postPic: String) {
-    addPost(postText: $postText, postPic: $postPic) {
+  mutation addPost($postText: String, $postPic: String, $isChecked: Boolean!) {
+    addPost(postText: $postText, postPic: $postPic, isChecked: $isChecked) {
       _id
       postText
       postPic
       postAuthor
       createdAt
+      isChecked
       comments {
         _id
         commentText
@@ -61,6 +62,22 @@ export const ADD_COMMENT = gql`
         _id
         commentText
         createdAt
+      }
+    }
+  }
+`;
+
+export const REMOVE_POST = gql`
+  mutation removePost($postId: ID!) {
+    removePost(postId: $postId) {
+      _id
+      postText
+      postPic
+      postAuthor
+      createdAt
+      comments {
+        _id
+        commentText
       }
     }
   }

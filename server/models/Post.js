@@ -23,7 +23,10 @@ const postSchema = new Schema({
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   },
-
+  isChecked: {
+    type: Boolean,
+    default: false,
+  },
   comments: [
     {
       commentText: {

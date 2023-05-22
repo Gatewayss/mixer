@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/client';
-import { QUERY_CHALLENGE } from '../../utils/queries';
+import { QUERY_CHECKED, QUERY_CHALLENGE } from '../../utils/queries';
 import Header from '../../components/Header/Header';
 
 const Challenge = () => {
@@ -28,7 +28,7 @@ const Challenge = () => {
         localStorage.setItem('countdown', newCountdown.toString());
         return newCountdown;
       });
-    }, 1000); 
+    }, 1000);
 
     return () => clearInterval(timer);
   }, []);
@@ -47,6 +47,12 @@ const Challenge = () => {
     return `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
 
+  const { loading: postLoading, data: postData } = useQuery(QUERY_CHECKED, {
+    variables: { isChecked: true },
+  });
+
+  const posts = postData?.posts || [];
+
   return (
     <div className="challenge-container">
       <Header />
@@ -57,6 +63,23 @@ const Challenge = () => {
         </div>
       )}
       <p>Time Left: {formatTime(countdown)}</p>
+      {/* Display the posts */}
+      {postLoading ? (
+        <p>Loading posts...</p>
+      ) : (
+        <div>
+          <h2>Posts:</h2>
+          {posts.map((post) => (
+            <div key={post._id}>
+              <img alt="challenge of the day" src={post.postPic}></img>
+              <p>{post.postText}</p>
+              <p>{post.postAuthor}</p>
+              <p>{post.createdAt}</p>
+            </div>
+          ))}
+
+        </div>
+      )}
     </div>
   );
 };
