@@ -8,6 +8,7 @@
     height: 100vh;  
     background-color: rgb(90, 90, 145);   
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Darumadrop One', cursive;
  }
  
  .signup-card {
@@ -131,6 +132,11 @@
     margin: 0;  
     font-size: 140px;      
     display: flex;
+    
+ }
+
+ .signup-home-link {
+   text-decoration: none;
  }
  
  .m{
@@ -144,6 +150,7 @@
  .signup-icon{
     font-size: 110px;  
     padding-top: 30px;   
+    color: white;
  }
  
  .e {

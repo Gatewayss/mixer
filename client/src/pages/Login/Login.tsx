@@ -58,15 +58,15 @@ const Login = (props: any) => {
       <div className="login-card">
         <div className="login-left">
           <div className="logo">
-            <h1 className="logo-header">
-              <span className="m">m</span>
-              <span className="i">i</span>
+           <Link className="login-home-link" to="/" ><h1 className="logo-header">
+              <span className="m">M</span>
+              <span className="i">I</span>
               <span className="login-icon">
                 <FontAwesomeIcon icon={faPaintbrushPencil} flip="vertical" />
               </span>
-              <span className="e">e</span>
-              <span className="r">r</span>
-            </h1>
+              <span className="e">E</span>
+              <span className="r">R</span>
+            </h1></Link>
             <p className="logo-tag">Artist block? Mix it up.</p>
           </div>
         </div>
