@@ -1,13 +1,18 @@
 .home-container {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Darumadrop One', cursive;
     width: 100%;      
     display: flex;
     flex-direction: column;
     justify-content: center;  
-    background-image: url(../../assets/grid_background.png);
-  background-position:  center;
-  background-size: cover;
-  background-repeat: no-repeat;       
+    background-image: url(../../assets/grid_background.png);    
+    background-size: cover;  
+     /* background-position: center; */
+    /* background-repeat: no-repeat;     */
+    background-position-y:  -95px;
+    background-position-x:  20px;
+    background-repeat: repeat;   
+    background-attachment: fixed;    
 }
 
 .home-header-container {
@@ -25,7 +30,7 @@
     width: 100%;
     font-size: xx-large;
     color: rgb(114, 44, 149);     
-  font-family: 'Darumadrop One', cursive;
+    font-family: 'Darumadrop One', cursive;
 
 }
 
@@ -52,6 +57,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;   
+    text-align: center;
+    font-size: large;
     background-image: url('../../assets/home_post.png');
     background-position: center;
     background-size: cover;
@@ -59,7 +66,51 @@
     border: 3px solid black;
     border-radius: 20px;
     padding:20px;
-width: 50%;  
+    width: 600px;  
     margin: 1rem auto;
 }
 
+@media only screen and (max-width: 1500px) {
+    .home-container {
+        background-position-y:  50px;
+        background-position-x:  -110px;
+     }
+  }
+
+@media only screen and (max-width: 1200px) {
+    .home-container {
+        background-position-y:  50px;
+        background-position-x:  -110px;
+     }
+  }
+@media only screen and (max-width: 992px) {
+    .home-container {
+        background-position-y: 200px;
+        background-position-x:  0px;
+     }
+
+  }
+ 
+    @media only screen and (max-width: 768px) {
+        .home-container {
+            background-position-y: 250px;
+            background-position-x:  -50px;
+         }
+        .home-postform-container {
+           width: 550px;
+        }     
+    
+      }
+     
+     
+     @media only screen and (max-width: 600px) {
+        .home-container {
+            background-position-y: 250px;
+            background-position-x:  0px;
+         }
+        .home-postform-container {
+           width: 425px;
+        }
+            
+      }
+     
