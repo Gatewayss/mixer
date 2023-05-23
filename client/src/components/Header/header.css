@@ -16,13 +16,16 @@
 }
 
 .home-link {
-  text-decoration: none;    
+  text-decoration: none;   
+  
 }
 
 .header-logo{
   margin: 0 50px;  
   font-size: 80px;      
-  display: flex; 
+  display: flex;    
+  /* border: solid red;  */
+  padding-bottom: 20px;;
   
 }
 
@@ -30,15 +33,15 @@
   text-decoration: none;  
 }
 
-.m{
+.hm{
   color: rgb(98, 0, 255); 
-   color: white;
+
   text-shadow: 2px 2px 4px #000000;
 }
 
-.i {
+.hi {
   color:rgb(170, 0, 255); 
-   color: white;
+
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -48,15 +51,15 @@
  
 }
 
-.e {
+.he {
   color:rgb(255, 0, 157);  
-   color: white;
+  
   text-shadow: 2px 2px 4px #000000;
 }
 
-.r {
+.hr {
   color:rgb(255, 0, 85);  
-   color: white;
+  
   text-shadow: 2px 2px 4px #000000;
 }
 
