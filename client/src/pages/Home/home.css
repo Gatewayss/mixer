@@ -5,11 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;  
-   
-}
-
-.background-container {
-     background-image: url(../../assets/grid_background.png);    
+    background-image: url(../../assets/grid_background.png);    
     background-size: cover;  
      /* background-position: center; */
     /* background-repeat: no-repeat;     */
@@ -17,7 +13,6 @@
     background-position-x:  20px;
     background-repeat: repeat;   
     background-attachment: fixed;    
-
 }
 
 .home-header-container {
