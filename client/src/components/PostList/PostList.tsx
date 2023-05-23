@@ -16,6 +16,7 @@ interface Post  {
   postPic: string
   postAuthor: string
   createdAt: string
+  isChecked: boolean
 }
 
 type PostProps = {
@@ -78,7 +79,8 @@ const PostList:FunctionComponent<PostProps> = ( {posts
             <Link to={`/profiles/${post.postAuthor}`}>
                   {post.postAuthor}              
             </Link>  
-            <p className="postdate">posted on {post.createdAt}</p>          
+            <p className="postdate">posted on {post.createdAt}</p>    
+            <p>{post.isChecked}</p>         
           </h4>
         {!post.postPic && ( 
         <div className="post-text-container">
