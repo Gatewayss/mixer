@@ -95,13 +95,13 @@ const Signup = () => {
       </div>
       <div className="signup-right">
         <div className="signup-logo">
-          <h2 className="signup-logo-header">
-              <span className="m">m</span>
-              <span className="i">i</span>
-              <span className="signup-icon"><FontAwesomeIcon icon={faPaintbrushPencil} flip="vertical" /></span>
-              <span className="e">e</span>
-              <span className="r">r</span>
-          </h2>
+        <Link className="signup-home-link"to="/"> <h2 className="signup-logo-header">
+              <span className="m">M</span>
+              <span className="i">I</span>
+             <span className="signup-icon"><FontAwesomeIcon icon={faPaintbrushPencil} flip="vertical" /></span>
+              <span className="e">E</span>
+              <span className="r">R</span>
+          </h2></Link>
           <p className="signup-tag">Artist block? Mix it up.</p>  
         </div>
 
