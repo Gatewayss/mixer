@@ -24,6 +24,7 @@ query getPosts($isChecked: Boolean) {
     postAuthor
     postPic
     createdAt
+    isChecked
   }
 }`
 

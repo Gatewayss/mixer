@@ -129,3 +129,14 @@
       height: 400px;
    }
  }
+
+ @media only screen and (max-width: 500px) {
+   .post-container {
+      width: 375px;
+   }
+
+   .post-pic {
+      width: 350px;
+      height: 350px;
+   }
+ }

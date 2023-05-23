@@ -20,7 +20,7 @@ const typeDefs = gql`
     _id: ID
     postText: String
     postPic: String
-    isChecked: String
+    isChecked: Boolean
     postAuthor: String
     createdAt: String    
     comments: [Comment]!

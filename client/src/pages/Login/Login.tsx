@@ -111,7 +111,7 @@ const Login = (props: any) => {
             <div className="no-account">
               <p className="no-acct-tag">Don't have an account?</p>
               <Link className="signup-link" to="/signup">
-                <button className="go-signup-btn">Sign up</button>
+                <button className="go-signup-btn">Sign up instead</button>
               </Link>
             </div>
           </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
   const logout = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     Auth.logout();
-    <Navigate to="/login"/>
+    // <Navigate to="/login"/>
   };
  
   return (

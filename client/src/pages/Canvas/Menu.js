@@ -1,3 +1,5 @@
+import "./canvas.css";
+
 const Menu = ({ setLineColor, setLineWidth, canvasRef, saveCanvasImage, deleteCanvasImage, setBrushShape }) => {
 
 	const openDialog = () => {
@@ -37,14 +39,17 @@ const Menu = ({ setLineColor, setLineWidth, canvasRef, saveCanvasImage, deleteCa
 	};
 
 	return (
-		<div className="Menu">
-			<label>Brush Color </label>
-			<input
-				type="color"
-				onChange={(e) => {
-					setLineColor(e.target.value);
-				}}
-			/>
+		<div className="canvas-menu">
+			<div className="brush-color-container">
+				<label className="brush-color-label">Brush Color </label>
+				<input className="brush-color"
+					type="color"
+					onChange={(e) => {
+						setLineColor(e.target.value);
+					}}
+				/>
+			</div>
+			{/* <div className="button-container"> */}
 			<button
 				className="rbg-buttons"
 				style={{ backgroundColor: '#FF0000' }}
@@ -81,8 +86,9 @@ const Menu = ({ setLineColor, setLineWidth, canvasRef, saveCanvasImage, deleteCa
 				onClick={() => {
 					setLineColor('#4B0082');
 				}}></button>
-
-			<label>Brush Width </label>
+			{/* </div> */}
+			<div className="brush-width-container">
+			<label className="brush-width-label">Brush Width </label>
 			<input
 				type="range"
 				min="3"
@@ -91,32 +97,33 @@ const Menu = ({ setLineColor, setLineWidth, canvasRef, saveCanvasImage, deleteCa
 					setLineWidth(e.target.value);
 				}}
 			/>
-			<button
+			</div>
+			<button className="square"
 				onClick={() => {
 					setBrushShape('square');
 				}}
 			>square</button>
-			<button
+			<button className="round"
 				onClick={() => {
 					setBrushShape('round');
 				}}
 			>round</button>
 
-			<button
+			<button className="erase"
 				onClick={() => {
 					setLineColor('#FFFFFF');
 				}}
 				>Erase</button>
 				
-			<button type="button"
+			<button className="save" type="button"
 				onClick={saveCanvasImage}>Save
 			</button>
 
-			<button type="button"
+			<button className="clear" type="button"
 				onClick={deleteCanvasImage}>Clear
 			</button>
 
-			<button
+			<button className="download"
 				type="button"
 				onClick={openDialog}
 			>
