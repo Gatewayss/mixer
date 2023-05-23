@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;  
     background-image: url(../../assets/grid_background.png);    
-    background-size: cover;  
+    /* background-size: cover;   */
      /* background-position: center; */
     /* background-repeat: no-repeat;     */
     background-position-y:  -95px;

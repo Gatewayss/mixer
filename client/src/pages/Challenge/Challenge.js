@@ -4,8 +4,9 @@ import { useQuery } from '@apollo/client';
 import { QUERY_CHECKED, QUERY_CHALLENGE } from '../../utils/queries';
 import Header from '../../components/Header/Header';
 import './challenge.css'
+import PostList from '../../components/PostList/PostList';
 
-const Challenge = () => {
+const Challenge = () => { 
   const { loading, data } = useQuery(QUERY_CHALLENGE);
   const challenges = data?.challenge || [];
   const [currentChallengeIndex, setCurrentChallengeIndex] = useState(0);
@@ -54,6 +55,7 @@ const Challenge = () => {
   });
 
   const posts = postData?.posts || [];
+ 
 
   return (
     <div className="challenge-container">
@@ -82,13 +84,14 @@ const Challenge = () => {
               <p>
               <Link to={`/profiles/${post.postAuthor}`}>
                   {post.postAuthor}              
-            </Link>  
+              </Link>  
               </p>
               <p className="postdate">{post.createdAt}</p>
             </div>
           ))}
 
         </div>
+        // <PostList posts={posts}/>
       )}
     </div>
   );
