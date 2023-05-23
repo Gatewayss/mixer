@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_CHECKED, QUERY_CHALLENGE } from '../../utils/queries';
 import Header from '../../components/Header/Header';
+import './challenge.css'
 
 const Challenge = () => {
   const { loading, data } = useQuery(QUERY_CHALLENGE);
@@ -55,26 +57,34 @@ const Challenge = () => {
 
   return (
     <div className="challenge-container">
+      <div>
       <Header />
+      </div>
+      <div className="current-container">
       {currentChallenge && (
-        <div key={currentChallenge.id}>
+        <div className="current-challenge"key={currentChallenge.id}>
           <p>{currentChallenge.challengeTitle}: </p>
           <p>{currentChallenge.challengeDescription}</p>
         </div>
       )}
-      <p>Time Left: {formatTime(countdown)}</p>
+      <p className="time-left">Time Left: {formatTime(countdown)}</p>
+      </div>
       {/* Display the posts */}
       {postLoading ? (
         <p>Loading posts...</p>
       ) : (
-        <div>
-          <h2>Posts:</h2>
+        <div className="postlist-container">  
+          <h2>Challenge Gallery:</h2>
           {posts.map((post) => (
-            <div key={post._id}>
-              <img alt="challenge of the day" src={post.postPic}></img>
-              <p>{post.postText}</p>
-              <p>{post.postAuthor}</p>
-              <p>{post.createdAt}</p>
+            <div className="post-container" key={post._id}>
+              <img className="post-pic-image" alt="challenge of the day" src={post.postPic}></img>
+              {/* <p>{post.postText}</p> */}
+              <p>
+              <Link to={`/profiles/${post.postAuthor}`}>
+                  {post.postAuthor}              
+            </Link>  
+              </p>
+              <p className="postdate">{post.createdAt}</p>
             </div>
           ))}
 
