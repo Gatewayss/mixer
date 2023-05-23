@@ -21,9 +21,11 @@ const Home = () => {
         <div className="home-header-container">
           <Header />  
         </div>  
+        <div className="background-container">
         <div className="header-navbar">
           <Navbar />
         </div>    
+       
         <div className='home-design'>
           <div className="home-postform-header">
             <h2>
@@ -47,7 +49,8 @@ const Home = () => {
           ) : (
             <PostList posts={posts} />
           )}
-          </div>                
+          </div>        
+        </div>        
     </div>    
     );
   };
