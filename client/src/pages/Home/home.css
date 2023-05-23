@@ -5,14 +5,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;  
-    background-image: url(../../assets/grid_background.png);    
-    /* background-size: cover;   */
+   
+}
+
+.background-container {
+     background-image: url(../../assets/grid_background.png);    
+    background-size: cover;  
      /* background-position: center; */
     /* background-repeat: no-repeat;     */
     background-position-y:  -95px;
     background-position-x:  20px;
     background-repeat: repeat;   
     background-attachment: fixed;    
+
 }
 
 .home-header-container {
