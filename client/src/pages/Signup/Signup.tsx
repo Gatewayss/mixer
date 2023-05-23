@@ -88,7 +88,7 @@ const Signup = () => {
           <div className="yes-account">
             <p className="yes-acct-tag">Already have an account?</p>
             <Link className="login-link" to="/login">
-              <button className="go-login-btn" >Login</button>
+              <button className="go-login-btn" >Login instead</button>
             </Link>
           </div>  
         </div>

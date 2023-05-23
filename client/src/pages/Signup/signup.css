@@ -16,8 +16,7 @@
     justify-content: space-between;
     align-items: center;
     width: 85%;
-    max-width: 1000px;
-    min-width: 450px;    
+    max-width: 1000px;   
     min-height: 450px; 
     margin: 10px; 
     background-color: white;  
@@ -130,7 +129,7 @@
  
  .signup-logo-header{
     margin: 0;  
-    font-size: 140px;      
+    font-size: 130px;      
     display: flex;
     
  }
@@ -148,7 +147,7 @@
  }
  
  .signup-icon{
-    font-size: 110px;  
+    font-size: 100px;  
     padding-top: 30px;   
     color: white;
  }
@@ -167,64 +166,67 @@
  }
  
   
+@media only screen and (max-width: 992px) {
+   .signup-card {
+      width: 95%;        
+   }
+   .signup-logo-header {
+      font-size: 115px;
+   }   
+   .signup-icon {
+      font-size: 85px;
+   }
+}
  
- @media only screen and (max-width: 992px) {
-    .signup-card {
-       flex-direction: column;      
-    }   
- 
-    .signup-left {
-       width: 100%;
-       height: 375px;
-       border-bottom-left-radius: 00px;
-       border-top-right-radius: 10px;
-    }
- 
-    .signup-header {
-       margin-top: 35px;
-       margin-bottom: 0px;
-       font-size: 55px;    
-    }
- 
-    .signup-form {
-       padding-top: 10px;
-       justify-content: flex-start;
-       height: 60%;   
-    }
- 
-    .yes-account {
-       justify-content: center;
-       height: 35%;          
-    }
- 
-    .signup-btn {
-       margin: 3px;
-       padding: 8px 40px;  
-       width: 85%;
-    }
- 
-    .go-login-btn {
-       margin: 0px;              
-    }
- 
-    .yes-acct-tag {      
-       margin-bottom: 3px;
-    }
- 
-    .signup-right {
-       width: 100%;
-       height: 325px;
-       border-bottom-left-radius: 10px;
-       border-top-right-radius: 0px;
-    }
- 
-    .signup-logo-header {
-       font-size: 130px;
-    }
- 
-    .signup-icon {
-       font-size: 100px;
-    }
- }
- 
- 
+@media only screen and (max-width: 768px) {
+   .signup-card {
+      flex-direction: column;      
+   }   
+
+   .signup-left {
+      width: 100%;
+      height: 375px;
+      border-bottom-left-radius: 00px;
+      border-top-right-radius: 10px;   
+   }
+
+   .signup-header {
+      margin-top: 35px;
+      margin-bottom: 0px;
+      font-size: 55px;    
+   }
+
+   .signup-form {
+      padding-top: 10px;
+      justify-content: flex-start;
+      height: 60%;   
+   }
+
+   .yes-account {
+      justify-content: center;
+      height: 35%;          
+   }
+
+   .signup-btn {
+      margin: 3px;
+      padding: 8px 40px;  
+      width: 85%;
+   }
+
+   .go-login-btn {
+      margin: 0px;              
+   }
+
+   .yes-acct-tag {      
+      margin-bottom: 3px;
+   }
+
+   .signup-right {
+      width: 100%;
+      height: 325px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0px;
+   }
+
+}
+

@@ -22,39 +22,33 @@ const Home = () => {
           <Header />  
         </div>  
         <div className="header-navbar">
-       <Navbar />
-      </div>    
+          <Navbar />
+        </div>    
         <div className='home-design'>
-        <div className="home-postform-header">
-        <h2>
-          <span className="mix">Mix</span ><span className="it">it</span>
-          <span className="up">up</span><span className="dash">~</span> 
-          Think Differently. Create Differently. Share.
-        </h2>
-      </div>
-        <div className="home-postform-container">
-        <h2>
-          <span className="mix">Mix</span ><span className="it">it</span>
-          <span className="up">up</span><span className="dash">~</span> 
-          Think Differently. Create Differently. Share.
-        </h2>
-          <PostForm />
-        </div>
+          <div className="home-postform-header">
+            <h2>
+              <span className="mix">Mix</span ><span className="it">it</span>
+              <span className="up">up</span><span className="dash">~</span> 
+              Think Differently. Create Differently. Share.
+            </h2>
+          </div>
+          <div className="home-postform-container">
+            <h2>
+              <span className="mix">Mix</span ><span className="it">it</span>
+              <span className="up">up</span><span className="dash">~</span> 
+              Think Differently. Create Differently. Share.
+            </h2>
+            <PostForm />
+          </div>
         </div>
         <div className="home-postlist-container">
           {loading ? (
-            <div>Loading...</div>
+          <div>Loading...</div>
           ) : (
-            <PostList
-              posts={posts}          
-              
-            />
+            <PostList posts={posts} />
           )}
-          </div>
-          {/* <Sidebar /> */}
-       
-      </div>
-    
+          </div>                
+    </div>    
     );
   };
   

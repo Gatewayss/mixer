@@ -114,3 +114,9 @@
             
       }
      
+    @media only screen and (max-width: 500px) {
+        .home-postform-container {
+           width: 375px;
+        }
+            
+      }
