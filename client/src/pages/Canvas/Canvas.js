@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Puff } from 'react-loading-icons'
 import Menu from "./Menu";
 import "./canvas.css";
+import Header from "../../components/Header/Header";
 
 function Canvas() {
   const canvasRef = useRef(null);
@@ -111,33 +112,41 @@ function Canvas() {
   };
 
   return (
-    <div className="App">
-      <h1>Mixer Canvas</h1>
-      {isAutoSaving && (
+    <div className="canvas-container">
+      <div className="canvas-header">
+        <Header />
+      </div>
+      
+      <div className="canvas-top">
+        <div className="spinner-container">
+        {isAutoSaving && (
         <div className="auto-save-spinner" style={{ textAlign: 'center' }}>
           <Puff stroke="#98ff98" strokeOpacity={.125} speed={.75} />
           <span>Auto-saving...</span>
         </div>
-      )}
+        )}
+        </div>
+        <div className="canvas-menu-container">
+          <Menu
+            setLineColor={setLineColor}
+            setLineWidth={setLineWidth}
+            deleteCanvasImage={deleteCanvasImage}
+            canvasRef={canvasRef}
+            brushShape={brushShape}
+            setBrushShape={setBrushShape}
+            saveCanvasImage={saveCanvasImage}
+          />
+          </div>
+      </div>
       <div className="draw-area">
-        <Menu
-          setLineColor={setLineColor}
-          setLineWidth={setLineWidth}
-          deleteCanvasImage={deleteCanvasImage}
-          canvasRef={canvasRef}
-          brushShape={brushShape}
-          setBrushShape={setBrushShape}
-          saveCanvasImage={saveCanvasImage}
-        />
-
-        <canvas
+        <canvas className="canvas"
           id="Mcanvas"
           onMouseDown={startDrawing}
           onMouseUp={endDrawing}
           onMouseMove={draw}
           ref={canvasRef}
-          width={`1280px`}
-          height={`720px`}
+          width={`1180px`}
+          height={`560px`}
         />
       </div>
     </div>
