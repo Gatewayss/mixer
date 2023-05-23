@@ -16,38 +16,48 @@
 }
 
 .home-link {
-  text-decoration: none;  
+  text-decoration: none;    
 }
 
 .header-logo{
-  margin: 0;  
+  margin: 0 50px;  
   font-size: 80px;      
-  display: flex;  
+  display: flex; 
+  
 }
 
 .header-logo a{
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 .m{
   color: rgb(98, 0, 255); 
+   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .i {
   color:rgb(170, 0, 255); 
+   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .header-icon{
   font-size: 60px;  
-  padding-top: 15px;  
+  padding-top: 20px;   
+ 
 }
 
 .e {
   color:rgb(255, 0, 157);  
+   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .r {
   color:rgb(255, 0, 85);  
+   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .header-navbar {
