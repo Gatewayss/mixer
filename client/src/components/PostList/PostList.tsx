@@ -66,7 +66,7 @@ const PostList:FunctionComponent<PostProps> = ( {posts
   };
 
   if (!posts.length) {
-    return <h3>No Posts Yet</h3>;
+    return <h3 className="no-posts">No Posts Yet</h3>;
   }
   
   return (

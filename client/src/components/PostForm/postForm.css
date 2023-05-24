@@ -83,6 +83,7 @@
   font-size: large;
   color: black;
   justify-content: center;
+  /* margin-top: 20px; */
 }
 
 .postfile-input {
@@ -223,9 +224,11 @@ button:focus + label {
 }
 
 .error-message {
- margin-bottom: -100px;
- margin-right: -300px;
- color: red; 
+  text-align: center;
+  margin-top: 30px;
+  color: red; 
+  font-size: medium;
+  position: fixed;
 }
 
 @media only screen and (max-width: 768px) {
@@ -233,7 +236,6 @@ button:focus + label {
      width: 550px;
   }     
 }
-
 
 @media only screen and (max-width: 600px) {
   .postform {

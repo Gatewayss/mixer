@@ -55,23 +55,22 @@ const Profile = () => {
           <Navbar />
         </div>
         <div className="profile-pics-container">
-        <div className="me-pic">
-          {!userParam && (        
-            <PictureUpload />
-          )} 
-        </div>
-        <div className="user-pic">
-            {userParam && (
-              <div className="pic-container" >
-                <div className="profile-pic">
-                    <img className="image" src={user.profilePic} alt="user pic"></img>
-                  </div>
-              </div>
-            )}
-        </div>
+          <div className="me-pic">
+            {!userParam && (        
+              <PictureUpload />
+            )} 
+          </div>
+          <div className="user-pic">
+              {userParam && (
+                <div className="pic-container" >
+                  <div className="profile-pic">
+                      <img className="image" src={user.profilePic} alt="user pic"></img>
+                    </div>
+                </div>
+              )}
+          </div>
         </div> 
       <div className="profile-post-container">
-
         <div className="profile-name">
           <h2 >
             Viewing {userParam ? `${user.username}'s` : 'your'} profile
