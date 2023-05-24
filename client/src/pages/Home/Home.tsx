@@ -34,11 +34,7 @@ const Home = () => {
             </h2>
           </div>
           <div className="home-postform-container">
-            <h2>
-              <span className="mix">Mix</span ><span className="it">it</span>
-              <span className="up">up</span><span className="dash">~</span> 
-              Think Differently. Create Differently. Share.
-            </h2>
+            
             <PostForm />
           </div>
         </div>
