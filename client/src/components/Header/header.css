@@ -16,50 +16,51 @@
 }
 
 .home-link {
-  text-decoration: none;   
-  
+  text-decoration: none;      
 }
 
 .header-logo{
   margin: 0 50px;  
   font-size: 80px;      
-  display: flex;    
-  /* border: solid red;  */
-  padding-bottom: 20px;;
-  
+  display: flex;   
+  padding-bottom: 20px; 
+  /* padding-left: 10px;
+  padding-right: 10px;  
+  background-image: url('../../assets/paper.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;  
+  box-shadow: 5px 6px #000634;  
+  margin-bottom: 5px;   */  
 }
 
-.header-logo a{
-  text-decoration: none;  
-}
 
 .hm{
   color: rgb(98, 0, 255); 
-
+  text-shadow: 3px 3px white; 
   text-shadow: 3px 6px #000634;
 }
 
 .hi {
   color:rgb(170, 0, 255); 
-
+  text-shadow: 3px 3px white; 
   text-shadow: 3px 6px #000634;
 }
 
 .header-icon{
   font-size: 60px;  
-  padding-top: 20px;      
+  color: rgb(114, 44, 149);     
 }
 
-
 .he {
-  color:rgb(255, 0, 157);  
-  
+  color:rgb(255, 0, 157);     
   text-shadow: 3px 6px #000634;
 }
 
 .hr {
-  color:rgb(255, 0, 85);  
-  
+  color:rgb(255, 0, 85);    
+  text-shadow: 3px 3px white; 
   text-shadow: 3px 6px #000634;
 }
 
@@ -106,29 +107,27 @@
 }
 
 
+.header-login, .header-signup  {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 3px 6px #000634;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    text-decoration: none;
+    margin: 0 5px;
+}
 
-
-
-
-
-
-.header-login, .header-signup {
-  display: flex;
-  /* position: relative; */
-  width: 100px;
-  height: 50px;
-  border-radius: 25px;
-  background: linear-gradient(40deg, #ff6ec4, #7873f5);
-  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform .2s ease-out;
+.header-login-link, .header-signup-link {
   text-decoration: none;
-  margin: 0 5px;
 }
 
 @media only screen and (max-width: 1200px) {
