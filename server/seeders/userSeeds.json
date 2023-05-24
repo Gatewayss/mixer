@@ -1,28 +1,43 @@
 [
     {
-      "username": "JaneK",
+      "username": "Jane",
       "email": "Jane12@gmail.com",
       "password": "password01"
     },
     {
-      "username": "GageNorton",
-      "email": "gageNorton@gmail.com",
+      "username": "Gage",
+      "email": "gage@gmail.com",
       "password": "password02"
     },
     {
-      "username": "SarahRIsCool",
+      "username": "Sarah",
       "email": "sarahcool@gmail.com",
       "password": "password03"
     },
     {
-      "username": "JackieL",
-      "email": "Jackl@gmail.com",
+      "username": "Abigail",
+      "email": "abigail@gmail.com",
       "password": "password04"
     },
     {
-      "username": "EdwardC",
+      "username": "Edward",
       "email": "twilight@gmail.com",
       "password": "password05"
+    },
+    {
+      "username": "Bella",
+      "email": "bella@gmail.com",
+      "password": "password06"
+    },
+    {
+      "username": "Alice",
+      "email": "alice@gmail.com",
+      "password": "password07"
+    },
+    {
+      "username": "Jasper",
+      "email": "jasper@gmail.com",
+      "password": "password08"
     }
   ]
   
