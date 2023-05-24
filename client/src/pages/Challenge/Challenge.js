@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import Header from '../../components/Header/Header';
+import Navbar from '../../components/Navbar/Navbar';
 import './challenge.css'
 import Countdown from '../../components/Countdown/Countdown';
 import PostList from '../../components/PostList/PostList';
@@ -20,9 +21,16 @@ const Challenge = () => {
   
 
   return (
-    <div className="challenge-container">         
-      <Header />
-      <Countdown />
+    <div className="challenge-container">       
+      <div className="navbar-header">  
+        <Header />
+      </div>   
+      <div className="challenge-navbar">
+        <Navbar />
+      </div>     
+      <div>
+        <Countdown />
+      </div>
       <div className="home-postlist-container">      
         <PostList posts={challengePosts} />      
       </div>

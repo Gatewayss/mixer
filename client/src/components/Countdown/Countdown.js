@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_CHECKED, QUERY_CHALLENGE } from '../../utils/queries';
+import './countdown.css';
 
 
 const Countdown = () => {

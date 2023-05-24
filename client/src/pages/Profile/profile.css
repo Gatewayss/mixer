@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+.profile-navbar {
+    display: flex;
+    width: 50%;
+}
+
 .profile-pics-container {
    display: flex;
    flex-direction: column;
@@ -73,3 +78,22 @@
     flex-direction: column;
 }
 
+@media only screen and (max-width: 1200px) {
+    .profile-navbar {
+      width: 40%;
+    
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {    
+    .profile-navbar {
+      width: 65%;
+     margin-bottom: 10px ;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {  
+    .profile-navbar {
+      width: 100%;
+    }
+  }
