@@ -21,6 +21,11 @@ color: #4644f0;
 .canvas-header {
 	width: 100%;
 }
+/* .canvas-navbar {
+	display: flex;
+	width: 50%;
+	margin-left: -900px;
+} */
 
 .draw-area {
 

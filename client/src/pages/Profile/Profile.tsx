@@ -4,6 +4,7 @@ import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
 import Header from '../../components/Header/Header';
+import Navbar from '../../components/Navbar/Navbar';
 import PictureUpload from '../../components/PictureUpload/PictureUpload';
 import PostForm from '../../components/PostForm/PostForm';
 import PostList from '../../components/PostList/PostList';
@@ -49,6 +50,9 @@ const Profile = () => {
       <div className="profile-container">
         <div className="profile-header-container">
           <Header /> 
+        </div>
+        <div className="profile-navbar">
+          <Navbar />
         </div>
         <div className="profile-pics-container">
         <div className="me-pic">

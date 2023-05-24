@@ -3,6 +3,7 @@ import { Puff } from 'react-loading-icons'
 import Menu from "./Menu";
 import "./canvas.css";
 import Header from "../../components/Header/Header";
+// import Navbar from '../../components/Navbar/Navbar';
 
 function Canvas() {
   const canvasRef = useRef(null);
@@ -116,6 +117,9 @@ function Canvas() {
       <div className="canvas-header">
         <Header />
       </div>
+      {/* <div className="canvas-navbar">
+        <Navbar />
+      </div> */}
       
       <div className="canvas-top">
         <div className="spinner-container">
