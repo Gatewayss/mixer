@@ -85,7 +85,7 @@
 
 .header-profile-pic{
   display: flex;   
-  border: solid 8px lightgray;      
+  border: solid 8px #000634;    
   width: 100px; 
   height: 100px; 
   overflow: hidden; 
