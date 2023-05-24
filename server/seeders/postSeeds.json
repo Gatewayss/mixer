@@ -1,27 +1,27 @@
 [
     {
-        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
-        "postAuthor": "JaneK"
+        "postPic": "https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684887603/cvz4divdemxsydoeizmc.jpg",
+        "postAuthor": "Jasper"
     },
     {
-        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
-        "postAuthor": "GageNorton"
+        "postText": "You can't use up creativity. The more you use, the more you have. ~ Maya Angelou",
+        "postAuthor": "Alice"
+    },
+ 
+    {
+        "postPic": "https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684875590/ae3xdvbl9cgbtnm4cdgj.jpg",
+        "postAuthor": "Edward"        
+    },  
+    {
+        "postPic": "https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684875558/sdwuj9m1yzllct9yjnbo.jpg",
+        "postAuthor": "Bella"
     },
     {
-        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
-        "postAuthor": "SarahRIsCool"
+        "postPic": "https://res.cloudinary.com/dkm1hkwdl/image/upload/v1684875611/pkv3hlatjnpp3cbeyb9l.jpg",
+        "postAuthor": "Bella"
     },
     {
-        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
-        "postAuthor": "JaneK",
-        "isChecked:": true
-    },
-    {
-        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
-        "postAuthor": "JackieL"
-    },
-    {
-        "postText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam elit, pharetra ac tincidunt condimentum, gravida in risus. Maecenas rutrum neque at tincidunt pharetra. Nullam ex tellus, euismod sit amet metus sed, ultrices imperdiet massa. Nullam sit amet suscipit mauris",
-        "postAuthor": "EdwardC"
+        "postText": "You can be cautious or you can be creative, but there's no such thing as a cautious creative. ~ George Lois",
+        "postAuthor": "Edward"
     }
 ]
