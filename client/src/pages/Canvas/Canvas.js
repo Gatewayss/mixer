@@ -113,24 +113,35 @@ function Canvas() {
   };
 
   return (
-    <div className="canvas-container">
-      <div className="canvas-header">
-        <Header />
+    <div className="canvas-container">     
+      <div className="canvas-main">
+        <div className="canvas-header">
+          <Header />
+        </div>   
+        <div className="canvas-top">
+          <div className="spinner-container">
+            {isAutoSaving && (
+            <div className="auto-save-spinner" style={{ textAlign: 'center' }}>
+              <Puff stroke="#98ff98" strokeOpacity={.125} speed={.75} />
+              <span>Auto-saving...</span>
+            </div>
+            )}
+          </div>
+        </div>
+        <div className="draw-area">
+          <canvas className="canvas"
+            id="Mcanvas"
+            onMouseDown={startDrawing}
+            onMouseUp={endDrawing}
+            onMouseMove={draw}
+            ref={canvasRef}       
+            width={`1180px`}
+            height={`560px`}
+          />
+        </div>
       </div>
-      {/* <div className="canvas-navbar">
-        <Navbar />
-      </div> */}
-      
-      <div className="canvas-top">
-        <div className="spinner-container">
-        {isAutoSaving && (
-        <div className="auto-save-spinner" style={{ textAlign: 'center' }}>
-          <Puff stroke="#98ff98" strokeOpacity={.125} speed={.75} />
-          <span>Auto-saving...</span>
-        </div>
-        )}
-        </div>
-        <div className="canvas-menu-container">
+
+      <div className="canvas-menu-container">
           <Menu
             setLineColor={setLineColor}
             setLineWidth={setLineWidth}
@@ -141,18 +152,6 @@ function Canvas() {
             saveCanvasImage={saveCanvasImage}
           />
           </div>
-      </div>
-      <div className="draw-area">
-        <canvas className="canvas"
-          id="Mcanvas"
-          onMouseDown={startDrawing}
-          onMouseUp={endDrawing}
-          onMouseMove={draw}
-          ref={canvasRef}
-          width={`1180px`}
-          height={`560px`}
-        />
-      </div>
     </div>
   );
 }
