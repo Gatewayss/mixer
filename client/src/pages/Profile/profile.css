@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;    
     width: 100%;   
+    background-size: cover;  
+    background-image: url('../../assets/../assets/grid_background.png');
+    background-attachment: fixed;   
 }
 
 .profile-header-container {
@@ -19,7 +22,7 @@
 .profile-pics-container {
    display: flex;
    flex-direction: column;
-   justify-content: center;      
+   justify-content: center;       
 }
 
 .me-pic, .user-pic {
@@ -59,11 +62,12 @@
 .profile-post-container {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;      
 }
 
 .profile-name {
-    text-align: center;
+    text-align: center;    
+    font-size: medium;   
 }
 
 .profile-postform-container {
