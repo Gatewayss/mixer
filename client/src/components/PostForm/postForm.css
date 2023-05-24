@@ -1,15 +1,34 @@
-.postform-container {   
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+.postform-container {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+}
+
+.postform {   
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
-  height:fit-content;       
-  padding: 3rem;
+  width: 600px; 
+  height: 250px;
+  padding:20px; 
+  background-image: url('../../assets/home_post.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  border: 4px solid rgb(0 6 52);
+  box-shadow: 5px 6px #000634;
+  margin-bottom: 15px; 
+  align-items: center;   
+  justify-content: center;
+  text-align: center;
+  font-size: large; 
 }
    
 .postform-body {
-  display: flex;
+  display: flex; 
 }
    
 .postform-form {
@@ -56,12 +75,13 @@
   border: none;
   color: rgb(0, 0, 0);
   font-weight: bold;
+  background-color: white;
 }
 .challenge {
   display: flex;
   width: 100%;
   font-size: large;
-  color: white;
+  color: black;
   justify-content: center;
 }
 
@@ -92,36 +112,32 @@
   margin-left: 2.5rem;
 }
 
-
 .postfile-name {
   position: absolute;
   bottom: -35px;
   left: 10px;
   font-size: 0.85rem;
-  color: #555;
-  
+  color: #555;  
 }
 
 .change-postfile, .postfile {
   opacity: 0;
   width: 0.1px;
   height: 0.1px;
-  position: absolute;
-  
+  position: absolute;  
 }
    
 .preview-container {
   width: 100%;  
-  display: flex;
-  
+  display: flex;  
 }
+
 .preview-postpic-container {
   display: flex;    
   align-items: center;
   justify-content: center;
   margin-bottom: 0px;   
 }
-
 
 .preview-post-pic{  
   display: flex;
@@ -209,4 +225,24 @@ button:focus + label {
  margin-bottom: -100px;
  margin-right: -300px;
  color: red; 
+}
+
+@media only screen and (max-width: 768px) {
+  .postform {
+     width: 550px;
+  }     
+}
+
+
+@media only screen and (max-width: 600px) {
+  .postform {
+     width: 425px;
+  }      
+}
+
+@media only screen and (max-width: 500px) {
+  .postform {
+     width: 375px;
+     height: 150px;        
+  }      
 }

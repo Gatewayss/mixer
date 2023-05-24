@@ -8,8 +8,11 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-background-image: linear-gradient(
-	120deg, #fdfbfb 0%, #ebedee 100%);
+/* background-image: linear-gradient(
+	120deg, #fdfbfb 0%, #ebedee 100%); */
+	background-size: cover;  
+    background-image: url('../../assets/../assets//background_light-green.png');
+    background-attachment: fixed;  
 }
 
 /* h1 {
