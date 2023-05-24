@@ -1,28 +1,71 @@
-.current-challenge {
+  .current-container {
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    margin-top: 50px;
+}
+
+.current-challenge { 
     display: flex;
     flex-direction: column;
+    width: 600px; 
+    height: 250px;
+    padding:20px; 
+    background-image: url('../../assets/home_post.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 4px solid rgb(0 6 52);
+    box-shadow: 5px 6px #000634;
+    margin-bottom: 15px; 
+    align-items: center;   
     justify-content: center;
-    align-items: center;
     text-align: center;
-    width: 400px;
-    margin-top: 20px;
-    padding: 3px;
-    border: solid black;
-    border-radius: 10px;
-    background-color: beige;
+    font-size: x-large; 
     font-weight: bold;
 }
 
-.current-container {
+.time-left {
+
+    width: 200px;
+    height: 45px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 3px 6px #000634;
     display: flex;
-    flex-direction: column;
-    justify-content: center;   
     align-items: center;
-    width: 100%;
-    /* border: solid lightgray; */
-    font-size: large;
-    
-
-
+    justify-content: center;
+    border: 2px solid black;
+    color: #000000;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    text-decoration: none;
+    margin-bottom: 15px;
 
 }
+
+@media only screen and (max-width: 768px) {
+    .current-challenge {
+       width: 550px;
+    }     
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .current-challenge {
+       width: 425px;
+    }      
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .current-challenge {
+       width: 375px;
+       height: 150px;        
+    }      
+  }

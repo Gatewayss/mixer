@@ -53,8 +53,7 @@ const Countdown = () => {
   });
 
 
-  return (
-    <div className="challenge-container">   
+  return (   
       <div className="current-container">
       {currentChallenge && (
         <div className="current-challenge"key={currentChallenge.id}>
@@ -63,8 +62,7 @@ const Countdown = () => {
         </div>
       )}
       <p className="time-left">Time Left: {formatTime(countdown)}</p>
-      </div> 
-    </div>
+      </div>     
   );
 };
 
