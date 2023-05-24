@@ -20,7 +20,7 @@
 	flex-direction: column;	
 	align-items: center;
 	margin-top: 0;
-	overflow-y: hidden;	
+	overflow: hidden;	
 }
 
 .canvas-header {
