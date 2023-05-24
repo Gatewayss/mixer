@@ -107,14 +107,14 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
     <div className="postform-container"> 
 
       {Auth.loggedIn() ? (
+      <div className="postform"> 
       <div className="postform-body"> 
       {!postPicUrl && (       
         <form className="postform-form" onSubmit={handleFormSubmit}>
           <div className="postform-textarea-container">
             <textarea
               className="postform-textarea"
-              name="postText"
-              // placeholder="What's on your mind?"
+              name="postText"              
               value={postText}           
               onChange={handleChange}
             ></textarea>
@@ -168,6 +168,7 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
           </div> 
           )}
         
+      </div>
       </div>
        ) : null
       } 
