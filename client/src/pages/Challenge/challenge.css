@@ -8,6 +8,7 @@
     background-size: cover;  
     background-image: url('../../assets/../assets/grid_background.png');
     background-attachment: fixed;  
+    overflow: hidden;	
 }
 
 .challenge-navbar {
