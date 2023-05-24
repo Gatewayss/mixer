@@ -24,8 +24,8 @@ const Header = () => {
         <Link className="home-link" to="/">
           <h1 className="header-logo">                    
               <span className="hm">M</span>
-              <span className="hi">I</span>
-              <span className="header-icon"><FontAwesomeIcon icon={faPaintbrushPencil} flip="vertical" /></span>
+              <span className="hi">I</span>              
+              <span ><FontAwesomeIcon icon={faPaintbrushPencil} flip="vertical" className="header-icon" /></span>
               <span className="he">E</span>
               <span className="hr">R</span>                   
             </h1>
@@ -45,12 +45,12 @@ const Header = () => {
           </>
       ) : (
         <>
-          <Link to="/login">
+          <Link className="header-login-link"to="/login">
           <div className="header-login">
             Login
             </div>
           </Link>
-          <Link to="/signup">
+          <Link className="header-signup-link"to="/signup">
           <div className="header-signup">
             Signup
             </div>
