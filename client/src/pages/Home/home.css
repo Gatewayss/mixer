@@ -31,7 +31,7 @@
     font-size: xx-large;
     color: rgb(114, 44, 149);     
     font-family: 'Darumadrop One', cursive;
-
+    
 }
 
 .mix {
@@ -64,6 +64,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border: 3px solid black;
+    box-shadow: 5px 6px #000634;
     border-radius: 20px;
     padding:20px;
     width: 600px;  
