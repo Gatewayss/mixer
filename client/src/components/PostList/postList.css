@@ -52,12 +52,6 @@
 .post-pic{
    display: flex;
    flex-wrap: wrap;  
-   /* border: solid 8px lightgray;       */
-   /* width: 600px;  */
-   /* height: 400px;  */
-   /* overflow: hidden;  
-   background-size: 100px;
-   background-position: 45%;     */
 }
 
 .post-pic-image{
@@ -71,8 +65,22 @@
   }
 
   .comment-close-btn {
-   background-color: plum;
-   border-radius: 10px;
+   width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    background: rgb(118, 159, 118);
+    box-shadow: 3px 6px #000634;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    text-decoration: none;
+    margin-bottom: 1rem;
   }
 
  .post-comment-btn {
@@ -101,12 +109,21 @@
    margin-top: -25px;  
    justify-content: flex-end;
 }
-   .delete-btn {
-   background-color: magenta;
-   border-radius: 10px;
-   color: white;
+   .delete-btn {  
    margin-right: 0;
-   
+   margin-top: -30px;
+   width: 120px;
+   height: 40px;
+   border-radius: 25px;
+   background: rgb(255, 0, 157);    
+   box-shadow: 3px 6px #000634;
+   border: 2px solid black;
+   color: white;
+   font-weight: bold;
+   font-size: small;
+   cursor: pointer;
+   transition: transform 0.2s ease-out;
+   text-decoration: none;
   }
 
  @media only screen and (max-width: 768px) {

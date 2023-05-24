@@ -11,9 +11,11 @@
     background-color: white;
     border-radius: 10px;
     padding: 0 5px;
+    margin-bottom: 60px;
     }
 .commentlist-header {
     font-size: medium;
+    margin-bottom: 5px;
    
 
 }
@@ -28,7 +30,7 @@
         border: solid lightgray;
         justify-content: center;
         /* align-items: center; */
-        margin: 2px 0;
+        margin: 4px 0;
     
         border-radius: 10px;
     }

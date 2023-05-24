@@ -19,8 +19,20 @@
 }
 
 .commentform-button {
-    border-radius: 10px;
-    border: solid lightgray;
-    background-color: lightgray;
-    margin-top: 2px;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 3px 6px #000634;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    color: #000000;
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    text-decoration: none;
+    margin-bottom: 1rem;
 }
