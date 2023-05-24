@@ -15,7 +15,9 @@
 }
 .commentform-textarea {
     width: 100%;
-    border-radius: 5px;
+   border: 3px dashed black;
+   border-radius: 15px;
+padding: 5px;
 }
 
 .commentform-button {
@@ -36,3 +38,7 @@
     text-decoration: none;
     margin-bottom: 1rem;
 }
+.commentform-button:hover{
+    background-color: #3a353b;
+    color: white;
+   }

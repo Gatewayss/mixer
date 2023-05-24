@@ -37,7 +37,10 @@
     border-top: solid black 6px;
     border-left: solid black 6px;
     border-radius: 15px 0 0 15px;
-    background-color: rgb(135, 135, 191); 
+    background-image: url('../../assets/home_post.png');
+    background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
     box-shadow: 3px 6px #000634;
   }
   .login-home-link {

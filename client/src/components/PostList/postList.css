@@ -36,7 +36,7 @@
 .post-text-container{ 
    padding: 5px;
    background-color: white;
-   border: 2px solid black;
+   border: 3px dashed black;
  border-radius: 15px;
 
 }
@@ -87,7 +87,10 @@
     text-decoration: none;
     margin-bottom: 1rem;
   }
-
+  .comment-close-btn:hover{
+   background-color: #3a353b;
+   color: white;
+  }
  .post-comment-btn {
    width: 120px;
     height: 40px;
@@ -107,6 +110,10 @@
     margin-bottom: 1rem;
    
   }
+  .post-comment-btn:hover{
+   background-color: #3a353b;
+   color: white;
+  }
 .delete-btn-container {
    display: flex;
    width: 100%;
@@ -120,7 +127,7 @@
    width: 120px;
    height: 40px;
    border-radius: 25px;
-   background: rgb(255, 0, 157);    
+   background: rgb(239 85 112);    
    box-shadow: 3px 6px #000634;
    border: 2px solid black;
    color: white;
@@ -131,6 +138,10 @@
    text-decoration: none;
   }
 
+  .delete-btn:hover{
+   background-color: #3a353b;
+   color: white;
+  }
  @media only screen and (max-width: 768px) {
    .post-container {
       width: 550px;
