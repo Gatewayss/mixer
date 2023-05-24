@@ -32,25 +32,23 @@
   background-repeat: no-repeat;
   border-radius: 15px;  
   box-shadow: 5px 6px #000634;  
-  margin-bottom: 5px;   */  
+  margin-bottom: 5px;    */
 }
 
 
 .hm{
   color: rgb(98, 0, 255); 
-  text-shadow: 3px 3px white; 
   text-shadow: 3px 6px #000634;
 }
 
 .hi {
   color:rgb(170, 0, 255); 
-  text-shadow: 3px 3px white; 
   text-shadow: 3px 6px #000634;
 }
 
 .header-icon{
   font-size: 60px;  
-  color: rgb(114, 44, 149);     
+  color: #000634; 
 }
 
 .he {
