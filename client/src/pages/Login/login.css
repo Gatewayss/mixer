@@ -6,7 +6,7 @@
     align-items: center;
     text-align: center;
     height: 100vh;      
-    background-color: rgb(90, 90, 145);   
+    background-image: url(../../assets/paper.jpg);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Darumadrop One', cursive;
   }
@@ -20,7 +20,8 @@
     min-height: 450px;  
     margin: 10px;
     background-color: white;  
-    border-radius: 10px;   
+    border-radius: 5px;   
+    border-color: black;
   }
   
   .login-left {
@@ -32,9 +33,12 @@
     color: white;
     width: 70%;   
     height: 600px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    background-color: rgb(47, 47, 118);      
+    border-bottom: solid black 6px;
+    border-top: solid black 6px;
+    border-left: solid black 6px;
+    border-radius: 15px 0 0 15px;
+    background-color: rgb(135, 135, 191); 
+    box-shadow: 3px 6px #000634;
   }
   .login-home-link {
     text-decoration: none;
@@ -85,10 +89,16 @@
     justify-content: center;
     color: white;   
     width: 30%;    
-    height: 600px;     
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: white;        
+    height: 600px;  
+    border-bottom: solid black 6px;
+    border-top: solid black 6px;
+    border-right: solid black 6px;
+    border-radius: 0 15px 15px 0;
+    background-image: url('../../assets/rainbow.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 3px 6px #000634;
   }
   
   .login-right-container {
@@ -109,7 +119,6 @@
    justify-content:flex-end;
    height: 50%;  
    margin: 0px;
-   background-color: white;      
   }
   
   .login-input{   
