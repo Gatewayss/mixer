@@ -61,7 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;   
-  width: 250px; 
+  width: 250px;   
 }
 
 .header-pic-container {
@@ -111,7 +111,7 @@
     cursor: pointer;
     transition: transform 0.2s ease-out;
     text-decoration: none;
-    margin: 0 5px;
+    margin-right: 22px;
 }
 
 .header-login-link, .header-signup-link {
@@ -134,7 +134,7 @@
   .header-logo{
     margin-top: -45px;
      padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   .header-navbar {
     width: 65%;
