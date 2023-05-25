@@ -123,7 +123,7 @@ function Canvas() {
             {isAutoSaving && (
             <div className="auto-save-spinner" style={{ textAlign: 'center' }}>
               <Puff stroke="#98ff98" strokeOpacity={.125} speed={.75} />
-              <span>Auto-saving...</span>
+              <span>Auto-saving!</span>
             </div>
             )}
           </div>

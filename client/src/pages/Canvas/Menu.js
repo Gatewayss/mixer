@@ -49,7 +49,6 @@ const Menu = ({ setLineColor, setLineWidth, canvasRef, saveCanvasImage, deleteCa
 					}}
 				/>
 			</div>
-			{/* <div className="button-container"> */}
 			<button
 				className="rbg-buttons"
 				style={{ backgroundColor: '#FF0000' }}
@@ -86,7 +85,6 @@ const Menu = ({ setLineColor, setLineWidth, canvasRef, saveCanvasImage, deleteCa
 				onClick={() => {
 					setLineColor('#4B0082');
 				}}></button>
-			{/* </div> */}
 			<div className="brush-width-container">
 			<label className="brush-width-label">Brush Width </label>
 			<input
@@ -149,12 +147,14 @@ const Menu = ({ setLineColor, setLineWidth, canvasRef, saveCanvasImage, deleteCa
 				</div>
 				<div className="modal-footer">
 					<button
+						className="close-btn"
 						type="button"
 						onClick={closeDialog}
 					>
 						Close
 					</button>
 					<button
+						className="download-btn"
 						id="download-btn"
 						type="button"
 						onClick={downloadFile}
