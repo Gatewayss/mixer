@@ -151,10 +151,14 @@
  
  .m{
     color: rgb(98, 0, 255);  
+  text-shadow: 3px 6px #000634;
+
  }
  
  .i {
     color:rgb(170, 0, 255); 
+  text-shadow: 3px 6px #000634;
+
  }
  
  .signup-icon{
@@ -165,10 +169,14 @@
  
  .e {
     color:rgb(255, 0, 157);   
+  text-shadow: 3px 6px #000634;
+
  }
  
  .r {
     color:rgb(255, 0, 85);   
+  text-shadow: 3px 6px #000634;
+
  }
  
  .signup-tag{

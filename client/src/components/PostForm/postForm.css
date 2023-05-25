@@ -1,5 +1,6 @@
 .postform-container {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Darumadrop One', cursive;
+  
   display: flex;
   flex-direction: column; 
   justify-content: center;
@@ -13,10 +14,9 @@
   width: 600px; 
   height: 250px;
   padding:20px; 
-  background-image: url('../../assets/home_post.png');
+  background-image: url('../../assets/grid_background.png');
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 150%;
   border-radius: 15px;
   border: 4px solid rgb(0 6 52);
   box-shadow: 5px 6px #000634;

@@ -15,7 +15,7 @@ const Home = () => {
  
   const posts = data?.posts || [];
   
-    return (    
+    return (  
       <div className="home-container">
         <div className=''></div>
         <div className="home-header-container">
@@ -45,7 +45,7 @@ const Home = () => {
             <PostList posts={posts} />
           )}
           </div>                
-    </div>    
+    </div>   
     );
   };
   

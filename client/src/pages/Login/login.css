@@ -7,6 +7,9 @@
     text-align: center;
     height: 100vh;      
     background-image: url(../../assets/paper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Darumadrop One', cursive;
   }
@@ -81,6 +84,7 @@
   .logo-tag{
     font-size: x-large;
     margin-top: 0;      
+text-shadow: 3px 2px #000634;
     
   }
   

@@ -4,7 +4,6 @@
    font-size: xx-large;
 }
 .postlist-container {
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -13,6 +12,8 @@
 }
 
 .post-container{
+  font-family: 'Darumadrop One', cursive;
+   
    display: flex;
    flex-direction: column; 
    width: 600px;
@@ -27,11 +28,13 @@
    margin-bottom: 15px;
 }
 .mail{
-   background-image: url(../../assets/mail_icon.png);
+   background-image: url(../../assets/rainbow.png);
    background-position: right;
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
-   
+   padding: 5px;
+   border-radius: 50px;
+   border: 3px solid black;
 }
 .post-text-container{ 
    padding: 5px;
@@ -44,6 +47,7 @@
 .postdate{
    font-size: small;
    font-style: italic;
+   margin-left: 1rem;
 }
 
 .post-pic-container {

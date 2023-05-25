@@ -71,6 +71,7 @@ const PostList:FunctionComponent<PostProps> = ( {posts
   
   return (
     <div className="postlist-container">  
+    
       {posts &&
         posts.map((post: Post ) => (
         <div className="post-container"key={post._id} >

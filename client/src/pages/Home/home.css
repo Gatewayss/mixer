@@ -1,18 +1,19 @@
 .home-container {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Darumadrop One', cursive;
     width: 100%;      
     display: flex;
     flex-direction: column;
     justify-content: center;  
-    background-image: url(../../assets/grid_background.png);    
+    background-image: url(../../assets/home_post.png);
+        
     background-size: cover;  
-     /* background-position: center; */
-    /* background-repeat: no-repeat;     */
-    background-position-y:  -95px;
+
+     background-position: center;
+    background-repeat: no-repeat;    
+     /* background-position-y:  -95px;
     background-position-x:  20px;
-    background-repeat: repeat;   
-    background-attachment: fixed;    
+    background-repeat: repeat;    */
+    background-attachment: fixed;     
     overflow: hidden;	
 }
 
@@ -63,7 +64,7 @@
     font-size: large;
 }
 
-@media only screen and (max-width: 1500px) {
+/* @media only screen and (max-width: 1500px) {
     .home-container {
         background-position-y:  50px;
         background-position-x:  -110px;
@@ -98,5 +99,5 @@
             background-position-x:  0px;
          }  
             
-      }
+      } */
      
