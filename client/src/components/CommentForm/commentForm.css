@@ -5,19 +5,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: solid red; */
+    /* border: solid blue; */
 }
 .comment-form {
     width: 100%;
+    /* border: solid red; */
 }
 .comment-textarea-container {
     width: 100%;
 }
 .commentform-textarea {
-    width: 100%;
+    width: 97%;
    border: 3px dashed black;
    border-radius: 15px;
-padding: 5px;
+    padding: 5px;
 }
 
 .commentform-button {
