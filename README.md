@@ -15,7 +15,7 @@ See it live on [Heroku!](https://paint-mixer.herokuapp.com/)
 
 ## Usage 
 Upon visiting our platform, you will be directed to the login page where you have the option to sign up as well. Once logged in, you will be redirected to the homepage where you can find the latest posts. 
-![Alt text](assets/home.png)
+
 
 In the top left corner, you'll notice the canvas, challenge, and logout tabs. To begin drawing, simply click on the canvas tab. The challenge tab presents our daily draw prompt, designed to inspire and break creative blocks. Only posts associated with the daily challenge will be displayed there. If you would like to contribute a drawing to the challenge, make sure to select the daily challenge checkbox when submitting your artwork. We look forward to seeing your creations!
 
