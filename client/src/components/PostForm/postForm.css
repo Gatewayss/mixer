@@ -88,8 +88,7 @@
   width: 100%;
   font-size: large;
   color: black;
-  justify-content: center;
-  /* margin-top: 20px; */
+  justify-content: center;  
 }
 
 .postfile-input {
@@ -235,7 +234,7 @@ button:focus + label {
 
 .error-message {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 150px;
   color: red; 
   font-size: medium;
   position: fixed;
