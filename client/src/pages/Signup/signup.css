@@ -7,6 +7,9 @@
     text-align: center;
     height: 100vh;  
     background-image: url(../../assets/paper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Darumadrop One', cursive;
  }
@@ -31,7 +34,7 @@
    align-items: center;
    justify-content: center;
    color: white;   
-   width: 30%;    
+   width: 50%;    
    height: 600px;  
    border-bottom: solid black 6px;
    border-top: solid black 6px;
@@ -128,13 +131,16 @@
    justify-content: center;
    text-align: center;
    color: white;
-   width: 70%;   
+   width: 50%;   
    height: 600px;
    border-bottom: solid black 6px;
    border-top: solid black 6px;
    border-right: solid black 6px;
    border-radius: 0 15px 15px 0;
-   background-color: rgb(135, 135, 191); 
+   background-image: url('../../assets/no_mail_background.png');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
    box-shadow: 3px 6px #000634;
 }
  
@@ -165,6 +171,7 @@
     font-size: 100px;  
     padding-top: 30px;   
     color: white;
+    filter: drop-shadow(3px 2px #000634);
  }
  
  .e {
@@ -180,8 +187,9 @@
  }
  
  .signup-tag{
-    font-size: 20px;
-    margin-top: 0;    
+   font-size: x-large;
+   margin-top: 0;      
+   text-shadow: 3px 2px #000634;  
  }
  
   
@@ -207,6 +215,10 @@
       height: 375px;
       border-bottom-left-radius: 00px;
       border-top-right-radius: 10px;   
+      border-bottom: none;
+      border-top: solid black 6px;
+      border-left: solid black 6px;
+      border-right: solid black 6px;
    }
 
    .signup-header {
@@ -245,6 +257,10 @@
       height: 325px;
       border-bottom-left-radius: 10px;
       border-top-right-radius: 0px;
+      border-bottom: solid black 6px;
+      border-top: none;
+      border-right: solid black 6px;
+      border-left: solid black 6px;
    }
 
 }

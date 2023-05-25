@@ -40,10 +40,10 @@
     border-top: solid black 6px;
     border-left: solid black 6px;
     border-radius: 15px 0 0 15px;
-    background-image: url('../../assets/home_post.png');
+    background-image: url('../../assets/no_mail_background.png');
     background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 3px 6px #000634;
   }
   .login-home-link {
@@ -67,9 +67,11 @@
     
   }
   .login-icon{
-    font-size: 120px;  
-    padding-top: 30px;
+    font-size: 110px;  
+    padding-top: 40px;
     color: white;
+    filter: drop-shadow(3px 2px #000634);
+    
     
   }
   .e {
@@ -84,7 +86,7 @@
   .logo-tag{
     font-size: x-large;
     margin-top: 0;      
-text-shadow: 3px 2px #000634;
+    text-shadow: 3px 2px #000634;
     
   }
   
@@ -192,6 +194,10 @@ text-shadow: 3px 2px #000634;
         height: 450px;
         border-bottom-left-radius: 0px;
         border-top-right-radius: 10px;
+        border-bottom: none;
+        border-top: solid black 6px;
+        border-left: solid black 6px;
+        border-right: solid black 6px;
     }
 
     .logo-header {
@@ -199,7 +205,7 @@ text-shadow: 3px 2px #000634;
     }
 
     .login-icon {
-        font-size: 100px;
+        font-size: 90px;
     }
 
     .login-right {
@@ -207,6 +213,10 @@ text-shadow: 3px 2px #000634;
         height: 250px;
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0px;
+        border-bottom: solid black 6px;
+        border-top: none;
+        border-right: solid black 6px;
+        border-left: solid black 6px;
     }
 
     .login-form {
@@ -242,5 +252,6 @@ text-shadow: 3px 2px #000634;
 
   .login-icon {
     font-size: 70px;
+    padding-top: 30px;
   }
 }
