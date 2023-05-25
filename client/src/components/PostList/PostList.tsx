@@ -75,9 +75,8 @@ const PostList:FunctionComponent<PostProps> = ( {posts
       {posts &&
         posts.map((post: Post ) => (
         <div className="post-container"key={post._id} >
-          <h4 className='mail'>          
-  
-            <Link to={`/profiles/${post.postAuthor}`}>
+          <h4 className='mail'>       
+            <Link className="profile-link" to={`/profiles/${post.postAuthor}`}>
                   {post.postAuthor}              
             </Link>  
             <p className="postdate">posted on {post.createdAt}</p>    

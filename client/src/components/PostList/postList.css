@@ -12,8 +12,7 @@
 }
 
 .post-container{
-  font-family: 'Darumadrop One', cursive;
-   
+  font-family: 'Darumadrop One', cursive;   
    display: flex;
    flex-direction: column; 
    width: 600px;
@@ -33,15 +32,19 @@
    background-size: cover;
    background-repeat: no-repeat;
    padding-top: 5px;
-   border-radius: 50px;
+   border-radius: 15px;
    border: 3px solid black;
+}
 
+.profile-link {
+   color: black;
+   font-size: x-large;  
 }
 .post-text-container{ 
    padding: 5px;
    background-color: white;
    border: 3px dashed black;
- border-radius: 15px;
+   border-radius: 15px;
 
 }
 
