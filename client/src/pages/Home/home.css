@@ -27,12 +27,13 @@
 }
 .home-postform-header {
     display: flex;
-    justify-content: center;  
+    justify-content: center;     
     text-align: center;    
     width: 100%;
-    font-size: xx-large;
+    font-size: 30px;
     color: #000634;;     
     font-family: 'Darumadrop One', cursive;
+  
     
 }
 
@@ -64,40 +65,13 @@
     font-size: large;
 }
 
-/* @media only screen and (max-width: 1500px) {
-    .home-container {
-        background-position-y:  50px;
-        background-position-x:  -110px;
-     }
-  }
-
-@media only screen and (max-width: 1200px) {
-    .home-container {
-        background-position-y:  50px;
-        background-position-x:  -110px;
-     }
-  }
+/* 
 @media only screen and (max-width: 992px) {
-    .home-container {
-        background-position-y: 200px;
-        background-position-x:  0px;
+    .home-postform-header {
+        font-size: 30px;
      }
 
   }
- 
-    @media only screen and (max-width: 768px) {
-        .home-container {
-            background-position-y: 250px;
-            background-position-x:  -50px;
-         }  
-      }
-     
-     
-     @media only screen and (max-width: 600px) {
-        .home-container {
-            background-position-y: 250px;
-            background-position-x:  0px;
-         }  
-            
-      } */
+  */
+
      
