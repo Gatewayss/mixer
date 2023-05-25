@@ -4,7 +4,7 @@
     flex-direction: column;    
     width: 100%;   
     background-size: cover;  
-    background-image: url('../../assets/../assets/grid_background.png');
+    background-image: url('../../assets/../assets/no_mail_background.png');
     background-attachment: fixed;   
     overflow: hidden;	
 }

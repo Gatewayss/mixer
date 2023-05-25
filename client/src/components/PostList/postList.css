@@ -32,9 +32,10 @@
    background-position: right;
    background-size: cover;
    background-repeat: no-repeat;
-   padding: 5px;
+   padding-top: 5px;
    border-radius: 50px;
    border: 3px solid black;
+
 }
 .post-text-container{ 
    padding: 5px;
