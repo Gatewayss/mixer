@@ -96,10 +96,11 @@
 .brush-color-label {
 	color: white;
 	margin: 5px;
+	font-size: 18px;
 }
 
 .brush-color {
-	height: 20px;
+	height: 40px;
 	width: 70px;
 	border-radius: 5px;	
 }
@@ -120,12 +121,36 @@
 .brush-width-label {
 	color: white;
 	margin: 3px;
+	font-size: 18px;
 }
-
 
 .square, .round, .erase, .save, .clear, .download {
 	border-radius: 10px;
 	margin: 2px;	
+	padding: .2em;
+	display: flex;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 3px 6px #000634;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    text-decoration: none;
+}
+
+.square:hover,
+.round:hover,
+.erase:hover,
+.save:hover,
+.clear:hover,
+.download:hover {
+    animation: bounce 0.6s ease infinite;
 }
 
 /* download modal styles  */
