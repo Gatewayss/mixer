@@ -196,3 +196,10 @@
 .modal-title {
 	font-size: 18px;
 }
+
+
+@media only screen and (max-width: 468px) {
+	.square, .round, .erase, .save, .clear, .download {
+		height: 30px;		
+	}
+  }
