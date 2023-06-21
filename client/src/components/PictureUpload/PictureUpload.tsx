@@ -50,7 +50,7 @@ const PictureUpload = () => {
        .then(resp => resp.json())    
       .then(data => {
         
-      setUrl(data.url);     
+      setUrl(data.secure_url);     
      
       
       })
