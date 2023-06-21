@@ -96,7 +96,7 @@ const uploadUrl = async (e: MouseEvent<HTMLButtonElement>) => {
      .then(resp => resp.json())    
     .then(data => {
       
-    setPostPicUrl(data.url);     
+    setPostPicUrl(data.secure_url);     
    
     
     })
