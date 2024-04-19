@@ -2,8 +2,8 @@
 
 Are you facing artist's block? Our innovative app is designed to provide you with the inspiration you need to overcome creative hurdles. With our app, you'll receive a daily challenge prompt to ignite your imagination. Explore our virtual canvas, where you can freely express your artistic vision and bring your ideas to life.
 
-![Daily challenge prompt](assets/challenge.png)
-![Canvas demo](assets/canvas.png)
+![Daily Challenge Prompt](assets/challenge.png)
+![Canvas Demo](assets/canvas.png)
 
 Moreover, our app fosters a vibrant community of like-minded individuals, enabling you to connect with fellow artists, share your work, and gain valuable feedback.
 
