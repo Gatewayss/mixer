@@ -7,7 +7,7 @@ Are you facing artist's block? Our innovative app is designed to provide you wit
 
 Moreover, our app fosters a vibrant community of like-minded individuals, enabling you to connect with fellow artists, share your work, and gain valuable feedback.
 
-![Homepage](assets/home.png)
+![homepage](assets/home.png)
 
  Don't let artist's block hold you back—join our app and unleash your creativity today!
 
