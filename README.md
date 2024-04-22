@@ -11,7 +11,7 @@ Moreover, our app fosters a vibrant community of like-minded individuals, enabli
 
  Don't let artist's block hold you back—join our app and unleash your creativity today!
 
-See it live on [Heroku!](https://paint-mixer.herokuapp.com/)
+See it live on [Heroku](https://paint-mixer.herokuapp.com/)
 
 ## Usage 
 Upon visiting our platform, you will be directed to the login page where you have the option to sign up as well. Once logged in, you will be redirected to the homepage where you can find the latest posts. 
